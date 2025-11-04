@@ -1,0 +1,665 @@
+{
+    "site": {
+        "title": "Pallihaat"
+    },
+    "announcement": "First-ever digital marketplace for local farmers!",
+    "search": {
+        "placeholder": "Search crops, livestock, fish..."
+    },
+    "nav": {
+        "agri": "Agri",
+        "horti": "Horti",
+        "aqua": "Aqua",
+        "sell": "Sell",
+        "signIn": "Sign In",
+        "signUp": "Sign Up",
+        "cart": "Cart",
+        "account": "Account",
+        "myOrders": "My Orders",
+        "logout": "Logout",
+        "viewAll": "View all",
+        "mobile": {
+            "agriProducts": "Agri Products",
+            "horticulture": "Horticulture",
+            "aquaculture": "Aquaculture",
+            "sellProduce": "Sell Your Produce",
+            "myAccount": "My Account"
+        },
+        "language": "Language"
+    },
+    "home": {
+        "shopByCategory": "Shop by Category",
+        "categoryDescription": "Discover farm-fresh products directly from local farmers and producers. Every purchase supports sustainable agriculture.",
+        "featuredProducts": "Featured Products",
+        "featuredProductsDescription": "Handpicked quality products for your home, curated with care",
+        "bestSellers": {
+            "description": "Most loved products by our community of customers",
+            "loading": "Loading best sellers...",
+            "quickView": "Quick View",
+            "badge": "Best Seller",
+            "noImage": "No Image",
+            "popularity": "Popularity"
+        },
+        "featuredProducers": {
+            "title": "Meet Our Producers",
+            "description": "Connect directly with the passionate producers who grow your food with care, dedication, and sustainable practices",
+            "loading": "Loading our amazing producers...",
+            "viewProducts": "View Products",
+            "viewAllProducers": "Explore All Producers",
+            "noLogo": "No Logo"
+        },
+        "testimonials": {
+            "title": "What Our Customers Say",
+            "subtitle": "What our customers say about us",
+            "reviews": [
+                {
+                    "quote": "The quality of produce is exceptional! Everything arrives fresh and lasts longer than supermarket products.",
+                    "author": "Sarah Johnson",
+                    "location": "Regular Customer"
+                },
+                {
+                    "quote": "As a chef, I appreciate the direct connection with farmers. The ingredients make my dishes stand out.",
+                    "author": "Michael Torres",
+                    "location": "Executive Chef"
+                },
+                {
+                    "quote": "Pallihaat made eating healthy so convenient. The website is intuitive and delivery is always on time.",
+                    "author": "Emma Lawson",
+                    "location": "Home Cook"
+                }
+            ]
+        },
+        "newsletter": {
+            "title": "Stay Updated",
+            "subtitle": "Subscribe to our newsletter for the latest products and offers",
+            "emailPlaceholder": "Your email address",
+            "subscribe": "Subscribe"
+        },
+        "valueProps": {
+      "title": "Why Choose Pallihaat",
+      "subtitle": "Experience the difference with our farmer-first approach and commitment to quality",
+      "trustMessage": "Trusted by thousands of customers and farmers nationwide",
+      "directFromFarm": {
+        "title": "Direct from Farm",
+        "description": "Get fresh products straight from local farmers, eliminating middlemen for better prices"
+      },
+      "qualityAssured": {
+        "title": "Quality Assured",
+        "description": "Every product is carefully verified for freshness and quality standards"
+      },
+      "fastDelivery": {
+        "title": "Fast Delivery",
+        "description": "Quick and reliable delivery to bring farm freshness to your doorstep"
+      },
+      "securePayment": {
+        "title": "Secure Payment",
+        "description": "Safe and encrypted payment options for worry-free transactions"
+      }
+    },
+        "categoryProducts": {
+            "freshFromFarms": "Fresh from local farms",
+            "byProducer": "by",
+            "perUnit": "per",
+            "onlyLeft": "Only {count} left",
+            "sale": "SALE"
+        }
+    },
+    "account": {
+        "title": "My Account",
+        "manageProfile": "Manage your profile and preferences",
+        "quickLinks": "Quick Links",
+        "cart": "Cart",
+        "orders": "Orders",
+        "disputesSupport": "Disputes & Support",
+        "helpCenter": "Help Center",
+        "logout": "Logout",
+        "changePassword": "Change Password",
+        "updateSecurity": "Update your security credentials",
+        "accountStatus": "Account Status",
+        "verifiedUser": "Verified User",
+        "profileInformation": "Profile Information",
+        "updatePersonalDetails": "Update your personal details",
+        "fullName": "Full Name",
+        "emailAddress": "Email Address",
+        "emailLocked": "Email cannot be changed",
+        "saveChanges": "Save Changes",
+        "accountSecurity": "Account Security",
+        "lastPasswordChange": "Last password change",
+        "twoFactor": "Two-factor authentication",
+        "notEnabled": "Not enabled",
+        "addressBook": "Address Book",
+        "manageAddresses": "Manage your delivery addresses",
+        "newAddress": "New Address",
+        "noSavedAddresses": "No saved addresses",
+        "addYourFirstAddress": "Add Your First Address",
+        "default": "Default",
+        "addressModal": {
+            "titleAdd": "Add New Address",
+            "titleEdit": "Edit Address",
+            "subtitleAdd": "Add a new delivery address",
+            "subtitleEdit": "Update your address details",
+            "label": "Label",
+            "labelCustom": "Custom",
+            "labelHome": "Home",
+            "labelWork": "Work",
+            "labelOther": "Other",
+            "contactName": "Contact Name",
+            "contactPhone": "Contact Phone",
+            "phonePlaceholder": "10-digit mobile number",
+            "addressLine1": "Address Line 1",
+            "addressLine1Placeholder": "House / Flat / Building",
+            "addressLine2": "Address Line 2",
+            "addressLine2Placeholder": "Street / Area / Landmark",
+            "city": "City",
+            "state": "State",
+            "postalCode": "Postal Code",
+            "postalCodePlaceholder": "PIN code",
+            "country": "Country",
+            "setDefault": "Set as default address",
+            "cancel": "Cancel",
+            "update": "Update Address",
+            "add": "Add Address",
+            "updating": "Updating...",
+            "adding": "Adding...",
+            "fullNamePlaceholder": "Full name"
+        }
+    },
+    "bestSellers": {
+        "title": "Best Sellers",
+        "viewAll": "View all",
+        "empty": "No best sellers yet."
+    },
+    "shop": {
+        "title": "Shop Products",
+        "filters": "Filters",
+        "headerSubtitle": "Discover fresh, local products directly from trusted producers",
+        "showingResultsFor": "Showing results for “{query}”",
+        "itemsCount": "{count} items",
+        "filter": "Filter",
+        "category": "Category",
+        "categoryLabel": "Category",
+        "clearCategory": "Clear Category",
+        "priceRange": "Price Range",
+        "min": "Min",
+        "max": "Max",
+        "resetPrice": "Reset Price",
+        "clear": "Clear",
+        "price": "Price",
+        "reset": "Reset",
+        "unit": "Unit",
+        "unitGeneric": "unit",
+        "per": "per",
+        "all": "All",
+        "inStockOnly": "In stock only",
+        "discountOnly": "Discounted products",
+        "sortBy": "Sort By",
+        "sort": {
+            "newest": "Newest",
+            "priceLowToHigh": "Price: Low to High",
+            "priceHighToLow": "Price: High to Low",
+            "rating": "Rating"
+        },
+        "refineSearch": "Refine your search",
+        "queryLabel": "Query",
+        "inStock": "In Stock",
+        "discount": "Discount",
+        "sale": "SALE",
+        "view": "View",
+        "viewDetails": "View Details",
+        "noProducts": "No products found."
+    },
+    "orders": {
+        "title": "My Orders",
+        "myDisputes": "My Disputes",
+        "refresh": "Refresh",
+        "loading": "Loading your orders...",
+        "empty": "You have not placed any orders yet.",
+        "goToShop": "Go to Shop",
+        "orderId": "Order ID",
+        "openDispute": "Open Dispute",
+        "openDisputeOrder": "Open Dispute (Order)",
+        "items": "Items",
+        "address": "Address",
+        "payment": "Payment",
+        "total": "Total",
+        "status": "Status"
+    },
+    "disputes": {
+        "title": "My Disputes",
+        "listTitle": "My Disputes",
+        "headerSubtitle": "Track and manage your dispute requests",
+        "refresh": "Refresh",
+        "empty": "No disputes.",
+        "emptyTitle": "No disputes",
+        "emptyDescription": "You haven’t opened any disputes yet.",
+        "dispute": "dispute",
+        "disputes": "disputes",
+        "order": "Order",
+        "viewDetails": "View Details",
+        "conversation": "Conversation",
+        "noMessagesYet": "No messages yet",
+        "startConversationSeller": "Start the conversation with the seller",
+        "sendMessageToSeller": "Send Message to Seller",
+        "selectPrompt": "Select a dispute to view messages",
+        "writeReply": "Write a reply…",
+        "sending": "Sending…",
+        "send": "Send"
+    },
+    "cart": {
+        "addedToCart": "Added to Cart",
+        "updated": "Cart updated.",
+        "viewCart": "View cart",
+        "checkout": "Checkout"
+    },
+    "cartPage": {
+        "title": "Shopping Cart",
+        "loading": "Loading...",
+        "empty": "Your cart is empty.",
+        "product": "Product",
+        "price": "Price",
+        "quantity": "Quantity",
+        "subtotal": "Subtotal",
+        "checkout": "Checkout",
+        "itemsCount": "Items: {count}",
+        "cartItemsHeading": "Cart Items",
+        "continueShopping": "Continue Shopping",
+        "orderSummary": "Order Summary",
+        "itemsLabel": "Items",
+        "shipping": "Shipping",
+        "free": "FREE",
+        "deliveryEta": "Delivery in 3-5 days",
+        "totalAmount": "Total Amount",
+        "proceedToCheckout": "Proceed to Checkout",
+        "processing": "Processing...",
+        "secureCheckout": "Secure checkout · SSL encrypted",
+        "savedAddresses": "Saved Addresses",
+        "selectAddress": "Select an address…",
+        "fullName": "Full Name",
+        "recipientName": "Recipient name",
+        "phone": "Phone",
+        "phonePlaceholder": "10-digit mobile number",
+        "addressLine1": "Address Line 1",
+        "houseFlatBuilding": "House / Flat / Building",
+        "addressLine2Optional": "Address Line 2 (optional)",
+        "streetAreaLandmark": "Street / Area / Landmark",
+        "city": "City",
+        "state": "State",
+        "stateRegion": "State / Region",
+        "postalCode": "Postal Code",
+        "pincode": "Pincode",
+        "country": "Country",
+        "countryPlaceholder": "Country",
+        "paymentMethod": "Payment Method",
+        "cod": "Cash on Delivery (COD)",
+        "prepaid": "Prepaid (Online)",
+        "saveThisAddress": "Save this address",
+        "setAsDefault": "Set as default",
+        "cancel": "Cancel",
+        "requiredAddressFields": "Please complete all required address fields",
+        "updateQtyFailed": "Failed to update quantity",
+        "removeItemFailed": "Failed to remove item",
+        "paymentGatewayFailed": "Failed to load payment gateway",
+        "paymentSuccess": "Payment successful and order confirmed",
+        "paymentVerifyFailed": "Payment verification failed",
+        "paymentCancelled": "Payment cancelled",
+        "orderPlaced": "Order placed successfully",
+        "orderFailed": "Failed to place order"
+    },
+    "product": {
+        "notFound": "Product not found.",
+        "outOfStock": "Product out of stock"
+    },
+    "common": {
+        "outOfStock": "Out of stock",
+        "addToCart": "Add to Cart",
+        "addToCartFailed": "Failed to add to cart",
+        "noImage": "No Image",
+        "currencySymbolInr": "₹",
+        "total": "Total"
+    },
+    "footer": {
+        "shop": "Shop",
+        "allProducts": "All Products",
+        "newArrivals": "New Arrivals",
+        "bestSellers": "Best Sellers",
+        "company": "Company",
+        "aboutUs": "About Us",
+        "careers": "Careers",
+        "press": "Press",
+        "support": "Support",
+        "contactUs": "Contact Us",
+        "faqs": "FAQs",
+        "returns": "Returns",
+        "legal": "Legal",
+        "privacyPolicy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "cookiePolicy": "Cookie Policy",
+        "copyright": "© 2025 Pallihaat. All rights reserved."
+    },
+    "carousel": {
+        "slide1": {
+            "title": "Sell Directly From Your Farm",
+            "subtitle": "Connect with buyers without middlemen cutting into your profits",
+            "cta": "Register as Farmer"
+        },
+        "slide2": {
+            "title": "Buy Fresh From Local Farms",
+            "subtitle": "Get the freshest produce straight from growers in your area",
+            "cta": "Browse Produce"
+        },
+        "slide3": {
+            "title": "Fair Prices For Everyone",
+            "subtitle": "Farmers earn more, buyers pay less - no hidden costs",
+            "cta": "How It Works"
+        }
+    },
+    "producerAuth": {
+        "signup": {
+            "headerTitle": "Join Our Producer Marketplace",
+            "headerSubtitle": "Connect directly with buyers and grow your business",
+            "steps": {
+                "details": "Producer Details",
+                "addressKyc": "Address & KYC",
+                "documents": "KYC Documents"
+            },
+            "section": {
+                "infoTitle": "Producer Information",
+                "infoSubtitle": "Tell us about your marketplace or producer profile",
+                "addressTitle": "Address & Verification",
+                "addressSubtitle": "Complete your registration",
+                "businessAddressTitle": "Farm/Business Address",
+                "aadhaarTitle": "Aadhaar Verification",
+                "aadhaarSubtitle": "Upload your Aadhaar card for address verification",
+                "idProofTitle": "ID Proof Documents",
+                "idProofHint": "Upload government ID (Aadhaar, PAN, Driving License)",
+                "addressProofTitle": "Address Proof",
+                "addressProofHint": "Upload utility bills, bank statements, etc.",
+                "secureNote": "Your information is secure and will only be used for verification purposes"
+            },
+            "labels": {
+                "email": "Email Address",
+                "password": "Password",
+                "marketplaceName": "Marketplace Name",
+                "phoneNumber": "Phone Number",
+                "categories": "Categories",
+                "description": "Marketplace Description",
+                "addressLine1": "Address Line 1",
+                "addressLine2": "Address Line 2",
+                "city": "City",
+                "state": "State",
+                "postalCode": "Postal Code",
+                "country": "Country",
+                "useAadhaarAsBusiness": "Use Aadhaar address as business address"
+            },
+            "placeholders": {
+                "email": "you@example.com",
+                "password": "Create a password",
+                "marketplaceName": "e.g., Green Valley Market",
+                "phoneNumber": "+91 XXX XXX XXXX",
+                "categories": "Select what you grow...",
+                "description": "Tell us about your farming practices, products, and story...",
+                "addressLine1": "Street address",
+                "addressLine2": "Landmark, village",
+                "city": "City",
+                "state": "State",
+                "postalCode": "PIN code"
+            },
+            "buttons": {
+                "chooseAadhaarImages": "Choose Aadhaar Images",
+                "addId": "Add ID",
+                "addProof": "Add Proof",
+                "continueToAddress": "Continue to Address",
+                "continueToDocuments": "Continue to Documents",
+                "backToDetails": "← Back to Farm Details",
+                "backToVerification": "← Back to Verification",
+                "completeRegistration": "Complete Registration",
+                "registering": "Registering Farm..."
+            },
+            "status": {
+                "readingAadhaar": "Reading Aadhaar..."
+            },
+            "links": {
+                "alreadyHaveAccount": "← Already have an account?"
+            },
+            "toasts": {
+                "uploadAadhaarFirst": "Upload your Aadhaar card images first",
+                "parseAadhaarFailed": "Failed to parse Aadhaar",
+                "invalidAadhaar": "Aadhaar is invalid or not clear. Please upload clearer images.",
+                "selectCategory": "Please select at least one category.",
+                "fillBusinessAddressOrSame": "Please fill business address or check the same-as-permanent option.",
+                "uploadBothKyc": "Please upload both KYC document types.",
+                "allFieldsRequired": "Please fill out all fields before proceeding.",
+                "signupCompleteLoggedIn": "Signup complete.",
+                "signupSuccessPleaseLogin": "Signup successful! Please log in.",
+                "signupFailed": "Signup failed"
+            }
+        },
+        "signin": {
+            "headerTitle": "Producer Login",
+            "headerSubtitle": "Access your producer dashboard",
+            "labels": {
+                "email": "Email Address",
+                "password": "Password"
+            },
+            "placeholders": {
+                "email": "you@example.com",
+                "password": "Your password"
+            },
+            "buttons": {
+                "signIn": "Sign In",
+                "signingIn": "Signing in..."
+            },
+            "links": {
+                "dontHaveAccount": "Don't have an account?",
+                "signUp": "Sign Up"
+            },
+            "section": {
+                "secureNote": "Your information is secure and will only be used for authentication purposes"
+            },
+            "toasts": {
+                "allFieldsRequired": "Please enter email and password",
+                "welcomeBack": "Login successful!",
+                "invalidCredentials": "Login failed"
+            }
+        },
+        "waiting": {
+            "headerTitle": "Verification In Progress",
+            "status": {
+                "approved": "Your KYC is approved",
+                "rejected": "KYC Rejected",
+                "pending": "KYC under review"
+            },
+            "descriptions": {
+                "rejected": "Your KYC was not approved. Please update your documents and resubmit for verification.",
+                "pending": "We are reviewing your KYC documents. This usually takes a short time."
+            },
+            "buttons": {
+                "updateDocuments": "Update KYC Documents",
+                "checking": "Checking...",
+                "checkStatus": "Check Status"
+            },
+            "lastChecked": "Last checked",
+            "autoRefresh": "Auto-refresh every 60s",
+            "footerNote": "You will be redirected to your dashboard as soon as your KYC is approved.",
+            "links": {
+                "needHelp": "Need help?"
+            }
+        }
+    },
+    "producer": {
+        "dashboard": {
+            "welcome": "Welcome back",
+            "subtitle": "Your farm business dashboard",
+            "updateProfile": "Update Profile",
+            "fullAnalytics": "Full Analytics",
+            "profileCard": {
+                "defaultBusinessName": "Your Farm Business"
+            },
+            "kpis": {
+                "totalOrders": {
+                    "title": "Total Orders",
+                    "subtitle": "All time orders"
+                },
+                "grossRevenue": {
+                    "title": "Gross Revenue",
+                    "subtitle": "Total earnings"
+                },
+                "avgRating": {
+                    "title": "Avg Rating",
+                    "subtitle": "({count} reviews)"
+                }
+            },
+            "charts": {
+                "ordersRevenue": {
+                    "title": "Orders & Revenue Trend"
+                },
+                "rangeLast10": "Last 10 days",
+                "ordersLabel": "Orders",
+                "revenueLabel": "Revenue (₹)"
+            },
+            "ratings": {
+                "title": "Customer Ratings",
+                "avgPrefix": "Avg:"
+            },
+            "businessInfo": {
+                "title": "Business Information",
+                "phone": "Phone Number",
+                "email": "Email Address",
+                "description": "Business Description",
+                "categories": "Business Categories"
+            },
+            "address": {
+                "title": "Address Details",
+                "businessAddress": "Business Address",
+                "permanentAddress": "Permanent Address",
+                "notSpecified": "Not specified"
+            },
+            "quickActions": {
+                "title": "Quick Actions",
+                "products": {
+                    "title": "Products",
+                    "subtitle": "Manage inventory"
+                },
+                "orders": {
+                    "title": "Orders",
+                    "subtitle": "View orders"
+                },
+                "analytics": {
+                    "title": "Analytics",
+                    "subtitle": "View reports"
+                },
+                "profile": {
+                    "title": "Profile",
+                    "subtitle": "Update details"
+                }
+            }
+        },
+        "products": {
+            "header": {
+                "title": "Product Management",
+                "subtitle": "Manage your farm products and inventory",
+                "addNew": "Add New Product"
+            },
+            "stats": {
+                "total": "Total Products",
+                "low": "Low Stock",
+                "out": "Out of Stock"
+            },
+            "search": {
+                "placeholder": "Search your products..."
+            },
+            "filter": {
+                "label": "Filter by Category",
+                "all": "All"
+            },
+            "empty": {
+                "title": "No products yet",
+                "subtitle": "Start by adding your first product",
+                "cta": "Add Your First Product"
+            },
+            "card": {
+                "perUnit": "per {size} {unit}",
+                "inStock": "{count} in stock",
+                "pricePerUnit": "Price per {size} {unit}",
+                "viewReviews": "View reviews"
+            },
+            "loading": {
+                "more": "Loading more products..."
+            },
+            "modal": {
+                "editTitle": "Edit Product",
+                "addTitle": "Add New Product",
+                "editSubtitle": "Update your product details",
+                "addSubtitle": "Fill in your product information"
+            },
+            "basicInfo": {
+                "title": "Basic Information",
+                "productName": "Product Name",
+                "productNamePlaceholder": "e.g., Organic Tomatoes, Fresh Milk, etc.",
+                "description": "Description",
+                "descriptionPlaceholder": "Describe your product... (quality, freshness, farming method, etc.)"
+            },
+            "pricing": {
+                "title": "Pricing & Inventory",
+                "priceLabel": "Price (₹)",
+                "pricePlaceholder": "0.00",
+                "priceHelp": "Price for one selling unit",
+                "stockLabel": "Available Stock",
+                "stockPlaceholder": "0"
+            },
+            "unit": {
+                "title": "Selling Unit",
+                "howItWorks": {
+                    "prefix": "How it works:",
+                    "text": "Set how you want to sell your product. For example, if you sell milk in 1-liter bottles, choose \"Litre\" and enter \"1\" as unit size."
+                },
+                "typeLabel": "Unit Type",
+                "customPlaceholder": "Enter your unit (e.g., basket, sack, jar)",
+                "sizeLabel": "Unit Size",
+                "sizePlaceholder": "e.g., 1, 0.5, 250",
+                "sizeHelp": "Size of one selling unit. Examples: 0.5 for half kg, 250 for 250ml, 1 for one piece"
+            },
+            "discount": {
+                "title": "Bulk Discount (Optional)",
+                "typeLabel": "Discount Type",
+                "type": {
+                    "none": "No Discount",
+                    "percentage": "Percentage (%)",
+                    "flat": "Flat Amount (₹)"
+                },
+                "valueLabel": "Discount Value",
+                "valuePlaceholderPercent": "e.g., 10 for 10%",
+                "valuePlaceholderFlat": "e.g., 50 for ₹50 off",
+                "minQtyLabel": "Minimum Quantity for Discount",
+                "minQtyPlaceholder": "e.g., 5",
+                "minQtyHelp": "Minimum number of {unit} required",
+                "minSubtotalLabel": "Minimum Order Value (₹) for Discount",
+                "minSubtotalPlaceholder": "e.g., 500",
+                "minSubtotalHelp": "Minimum total order amount required"
+            },
+            "category": {
+                "title": "Category",
+                "selectPlaceholder": "Select Product Category"
+            },
+            "images": {
+                "title": "Product Images (up to 5)",
+                "addImage": "Add Image",
+                "help": "Add clear photos of your product from different angles"
+            },
+            "form": {
+                "cancel": "Cancel",
+                "uploading": "Uploading...",
+                "updating": "Updating...",
+                "add": "Add Product",
+                "update": "Update Product"
+            },
+            "delete": {
+                "title": "Delete Product",
+                "prompt": "Are you sure you want to delete \"{title}\"? This action cannot be undone.",
+                "cancel": "Cancel",
+                "deleting": "Deleting...",
+                "confirm": "Delete Product"
+            }
+        }
+    }
+}

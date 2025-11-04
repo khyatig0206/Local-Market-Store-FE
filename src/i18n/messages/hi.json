@@ -1,0 +1,662 @@
+{
+    "site": {
+        "title": "पल्लीहाट"
+    },
+    "announcement": "स्थानीय किसानों के लिए पहला डिजिटल मार्केटप्लेस! अपनी कृषि, बागवानी और मत्स्य उत्पाद सीधे खरीदारों को बेचें।",
+    "search": {
+        "placeholder": "फसलें, पशुधन, मछली खोजें..."
+    },
+    "nav": {
+        "agri": "कृषि",
+        "horti": "बागवानी",
+        "aqua": "मत्स्य",
+        "sell": "बेचें",
+        "signIn": "साइन इन",
+        "signUp": "रजिस्टर",
+        "cart": "कार्ट",
+        "account": "खाता",
+        "myOrders": "मेरे ऑर्डर",
+        "logout": "लॉगआउट",
+        "viewAll": "सभी देखें",
+        "mobile": {
+            "agriProducts": "कृषि उत्पाद",
+            "horticulture": "बागवानी",
+            "aquaculture": "मत्स्य पालन",
+            "sellProduce": "अपनी उपज बेचें",
+            "myAccount": "मेरा खाता"
+        },
+        "language": "भाषा"
+    },
+    "home": {
+        "shopByCategory": "श्रेणी अनुसार खरीदें",
+        "categoryDescription": "स्थानीय किसानों और उत्पादकों से सीधे ताज़ा उत्पाद प्राप्त करें। हर खरीद टिकाऊ कृषि का समर्थन करती है।",
+        "featuredProducts": "चयनित उत्पाद",
+        "featuredProductsDescription": "आपके घर के लिए सावधानी से चयनित गुणवत्तापूर्ण उत्पाद",
+        "bestSellers": {
+            "description": "हमारे ग्राहकों द्वारा सबसे पसंदीदा उत्पाद",
+            "loading": "सर्वाधिक बिकने वाले ��त्पाद लोड हो रहे हैं...",
+            "quickView": "त्वरित दृश्य",
+            "badge": "सर्वाधिक बिकने वाला",
+            "noImage": "छवि नहीं",
+            "popularity": "लोकप्रियता"
+        },
+        "featuredProducers": {
+            "title": "हमारे उत्पादकों से मिलें",
+            "description": "उन समर्पित उत्पादकों से सीधे जुड़ें जो देखभाल, समर्पण और टिकाऊ प्रथाओं के साथ आपका भोजन उगाते हैं",
+            "loading": "हमारे अद्भुत उत्पादक लोड हो रहे हैं...",
+            "viewProducts": "उत्पाद देखें",
+            "viewAllProducers": "सभी उत्पादक देखें",
+            "noLogo": "लोगो नहीं"
+        },
+        "testimonials": {
+            "title": "हमारे ग्राहकों की राय",
+            "subtitle": "हमारे ग्राहक हमारे बारे में क्या कहते हैं",
+            "reviews": [
+                {
+                    "quote": "उत्पाद की गुणवत्ता असाधारण है! सब कुछ ताज़ा आता है और सुपरमार्केट उत्पादों से अधिक समय तक रहता है।",
+                    "author": "सारा जॉनसन",
+                    "location": "नियमित ग्राहक"
+                },
+                {
+                    "quote": "एक शेफ के रूप में, मैं किसानों के साथ सीधे संबंध की सराहना करता हूं। सामग्री मेरे व्यंजनों को खास बनाती है।",
+                    "author": "माइकल टोरेस",
+                    "location": "कार्यकारी शेफ"
+                },
+                {
+                    "quote": "Pallihaat ने स्वस्थ खाना इतना सुविधाजनक बना दिया। वेबसाइट सहज है और डिलीवरी हमेशा समय पर होती है।",
+                    "author": "एम्मा लॉसन",
+                    "location": "घरेलू रसोइया"
+                }
+            ]
+        },
+        "newsletter": {
+            "title": "अपडेट रहें",
+            "subtitle": "नवीनतम उत्पादों और ऑफ़र्स के लिए हमारे न्यूज़लेटर की सदस्यता लें",
+            "emailPlaceholder": "अपना ईमेल पता",
+            "subscribe": "सदस्यता लें"
+        },
+        "valueProps": {
+            "directFromFarm": {
+                "title": "सीधे खेत से",
+                "description": "स्थानीय किसानों से सीधे आपके दरवाजे तक"
+            },
+            "qualityAssured": {
+                "title": "गुणवत्ता सुनिश्चित",
+                "description": "100% जैविक और गुणवत्ता-परीक्षित उत्पाद"
+            },
+            "fastDelivery": {
+                "title": "तेज़ डिलीवरी",
+                "description": "अधिकांश क्षेत्रों में अगले दिन डिलीवरी"
+            },
+            "securePayment": {
+                "title": "सुरक्षित भुगतान",
+                "description": "सुरक्षित और एन्क्रिप्टेड लेनदेन"
+            }
+        },
+        "categoryProducts": {
+            "freshFromFarms": "स्थानीय खेतों से ताज़ा",
+            "byProducer": "द्वारा",
+            "perUnit": "प्रति",
+            "onlyLeft": "केवल {count} शेष",
+            "sale": "सेल"
+        }
+    },
+    "account": {
+        "title": "मेरा खाता",
+        "manageProfile": "अपनी प्रोफ़ाइल और प्राथमिकताएँ प्रबंधित करें",
+        "quickLinks": "त्वरित लिंक",
+        "cart": "कार्ट",
+        "orders": "ऑर्डर",
+        "disputesSupport": "विवाद और सहायता",
+        "helpCenter": "सहायता केंद्र",
+        "logout": "लॉगआउट",
+        "changePassword": "पासवर्ड बदलें",
+        "updateSecurity": "अपनी सुरक्षा साख अपडेट करें",
+        "accountStatus": "खाते की स्थिति",
+        "verifiedUser": "सत्यापित उपयोगकर्ता",
+        "profileInformation": "प्रोफ़ाइल जानकारी",
+        "updatePersonalDetails": "अपनी व्यक्तिगत जानकारी अपडेट करें",
+        "fullName": "पूरा नाम",
+        "emailAddress": "ईमेल पता",
+        "emailLocked": "ईमेल बदला नहीं जा सकता",
+        "saveChanges": "परिवर्तन सहेजें",
+        "accountSecurity": "खाता सुरक्षा",
+        "lastPasswordChange": "अंतिम पासवर्ड परिवर्तन",
+        "twoFactor": "दो-कारक प्रमाणीकरण",
+        "notEnabled": "सक्रिय नहीं",
+        "addressBook": "पता पुस्तिका",
+        "manageAddresses": "अपने डिलीवरी पते प्रबंधित करें",
+        "newAddress": "नया पता",
+        "noSavedAddresses": "कोई सहेजे गए पते नहीं",
+        "addYourFirstAddress": "अपना पहला पता जोड़ें",
+        "default": "डिफ़ॉल्ट",
+        "addressModal": {
+            "titleAdd": "नया पता जोड़ें",
+            "titleEdit": "पता संपादित करें",
+            "subtitleAdd": "नया डिलीवरी पता जोड़ें",
+            "subtitleEdit": "अपना पता विवरण अपडेट करें",
+            "label": "लेबल",
+            "labelCustom": "कस्टम",
+            "labelHome": "घर",
+            "labelWork": "ऑफिस",
+            "labelOther": "अन्य",
+            "contactName": "संपर्क नाम",
+            "contactPhone": "संपर्क फोन",
+            "phonePlaceholder": "10 अंकों का मोबाइल नंबर",
+            "addressLine1": "पता पंक्ति 1",
+            "addressLine1Placeholder": "मकान / फ्लैट / बिल्डिंग",
+            "addressLine2": "पता पंक्ति 2",
+            "addressLine2Placeholder": "गली / क्षेत्र / लैंडमार्क",
+            "city": "शहर",
+            "state": "राज्य",
+            "postalCode": "डाक कोड",
+            "postalCodePlaceholder": "पिनकोड",
+            "country": "देश",
+            "setDefault": "डिफ़ॉल्ट पता बनाएं",
+            "cancel": "रद्द करें",
+            "update": "पता अपडेट करें",
+            "add": "पता जोड़ें",
+            "updating": "अपडेट हो रहा है...",
+            "adding": "जोड़ा जा रहा है...",
+            "fullNamePlaceholder": "पूरा नाम"
+        }
+    },
+    "bestSellers": {
+        "title": "सबसे ज्यादा बिकने वाले",
+        "viewAll": "सभी देखें",
+        "empty": "अभी कोई सर्वाधिक बिकने वाले उत्पाद नहीं।"
+    },
+    "shop": {
+        "title": "उत्पाद खरीदें",
+        "filters": "फ़िल्टर",
+        "headerSubtitle": "विश्वसनीय उत्पादकों से सीधे ताज़ा, स्थानीय उत्पाद खोजें",
+        "showingResultsFor": "“{query}” के लिए परिणाम दिखाए जा रहे हैं",
+        "itemsCount": "{count} आइटम",
+        "filter": "फ़िल्टर",
+        "category": "श्रेणी",
+        "categoryLabel": "श्रेणी",
+        "clearCategory": "श्रेणी साफ़ करें",
+        "priceRange": "कीमत सीमा",
+        "min": "न्यूनतम",
+        "max": "अधिकतम",
+        "resetPrice": "कीमत रीसेट",
+        "clear": "साफ़ करें",
+        "price": "कीमत",
+        "reset": "रीसेट",
+        "unit": "इकाई",
+        "unitGeneric": "इकाई",
+        "per": "प्रति",
+        "all": "सभी",
+        "inStockOnly": "केवल स्टॉक में",
+        "discountOnly": "छूट वाले उत्पाद",
+        "sortBy": "क्रमबद्ध करें",
+        "sort": {
+            "newest": "नवीनतम",
+            "priceLowToHigh": "कीमत: कम से अधिक",
+            "priceHighToLow": "कीमत: अधिक से कम",
+            "rating": "रेटिंग"
+        },
+        "refineSearch": "खोज को परिष्कृत करें",
+        "queryLabel": "खोज",
+        "inStock": "स्टॉक में",
+        "discount": "छूट",
+        "sale": "सेल",
+        "view": "देखें",
+        "viewDetails": "विवरण देखें",
+        "noProducts": "कोई उत्पाद नहीं मिला।"
+    },
+    "orders": {
+        "title": "मेरे ऑर्डर",
+        "myDisputes": "मेरे विवाद",
+        "refresh": "रिफ्रेश",
+        "loading": "आपके ऑर्डर लोड हो रहे हैं...",
+        "empty": "आपने अभी तक कोई ऑर्डर नहीं किया है।",
+        "goToShop": "दुकान पर जाएँ",
+        "orderId": "ऑर्डर आईडी",
+        "openDispute": "विवाद खोलें",
+        "openDisputeOrder": "विवाद खोलें (ऑर्डर)",
+        "items": "आइटम",
+        "address": "पता",
+        "payment": "भुगतान",
+        "total": "कुल",
+        "status": "स्थिति"
+    },
+    "disputes": {
+        "title": "मेरे विवाद",
+        "listTitle": "मेरे विवाद",
+        "headerSubtitle": "अपने विवाद अनुरोध ट्रैक और प्रबंधित करें",
+        "refresh": "रिफ्रेश",
+        "empty": "कोई विवाद नहीं।",
+        "emptyTitle": "कोई विवाद नहीं",
+        "emptyDescription": "आपने अभी तक कोई विवाद नहीं उठाया है।",
+        "dispute": "विवाद",
+        "disputes": "विवाद",
+        "order": "ऑर्डर",
+        "viewDetails": "विवरण देखें",
+        "conversation": "संवाद",
+        "noMessagesYet": "अभी कोई संदेश नहीं",
+        "startConversationSeller": "विक्रेता से बातचीत शुरू करें",
+        "sendMessageToSeller": "विक्रेता को संदेश भेजें",
+        "selectPrompt": "संदेश देखने के लिए एक विवाद चुनें",
+        "writeReply": "उत्तर लिखें…",
+        "sending": "भेजा जा रहा है…",
+        "send": "भेजें"
+    },
+    "cart": {
+        "addedToCart": "कार्ट में जोड़ा गया",
+        "updated": "कार्ट अपडेट किया गया।",
+        "viewCart": "कार्ट देखें",
+        "checkout": "चेकआउट"
+    },
+    "cartPage": {
+        "title": "शॉपिंग कार्ट",
+        "loading": "लोड हो रहा है...",
+        "empty": "आपका कार्ट खाली है।",
+        "product": "उत्पाद",
+        "price": "कीमत",
+        "quantity": "मात्रा",
+        "subtotal": "उप-योग",
+        "checkout": "चेकआउट",
+        "itemsCount": "आइटम: {count}",
+        "cartItemsHeading": "कार्ट आइटम",
+        "continueShopping": "खरीदारी जारी रखें",
+        "orderSummary": "ऑर्डर सारांश",
+        "itemsLabel": "आइटम",
+        "shipping": "शिपिंग",
+        "free": "नि:शुल्क",
+        "deliveryEta": "3-5 दिनों में डिलीवरी",
+        "totalAmount": "कुल राशि",
+        "proceedToCheckout": "चेकआउट के लिए आगे बढ़ें",
+        "processing": "प्रोसेसिंग...",
+        "secureCheckout": "सुरक्षित चेकआउट · SSL एन्क्रिप्टेड",
+        "savedAddresses": "सहेजे गए पते",
+        "selectAddress": "एक पता चुनें…",
+        "fullName": "पूरा नाम",
+        "recipientName": "प्राप्तकर्ता का नाम",
+        "phone": "फोन",
+        "phonePlaceholder": "10 अंकों का मोबाइल नंबर",
+        "addressLine1": "पता पंक्ति 1",
+        "houseFlatBuilding": "मकान / फ्लैट / बिल्डिंग",
+        "addressLine2Optional": "पता पंक्ति 2 (वैकल्पिक)",
+        "streetAreaLandmark": "गली / क्षेत्र / लैंडमार्क",
+        "city": "शहर",
+        "state": "राज्य",
+        "stateRegion": "राज्य / क्षेत्र",
+        "postalCode": "डाक कोड",
+        "pincode": "पिनकोड",
+        "country": "देश",
+        "countryPlaceholder": "देश",
+        "paymentMethod": "भुगतान विधि",
+        "cod": "कैश ऑन डिलीवरी (COD)",
+        "prepaid": "प्रीपेड (ऑनलाइन)",
+        "saveThisAddress": "इस पते को सहेजें",
+        "setAsDefault": "डिफ़ॉल्ट बनाएं",
+        "cancel": "रद्द करें",
+        "requiredAddressFields": "कृपया सभी आवश्यक पता फ़ील्ड पूरा करें",
+        "updateQtyFailed": "मात्रा अपडेट करने में विफल",
+        "removeItemFailed": "आइटम हटाने में विफल",
+        "paymentGatewayFailed": "पेमेंट गेटवे लोड करने में विफल",
+        "paymentSuccess": "भुगतान सफल और ऑर्डर की पुष्टि हुई",
+        "paymentVerifyFailed": "भुगतान सत्यापन विफल",
+        "paymentCancelled": "भुगतान रद्द किया गया",
+        "orderPlaced": "ऑर्डर सफलतापूर्वक किया गया",
+        "orderFailed": "ऑर्डर करने में विफल"
+    },
+    "product": {
+        "notFound": "उत्पाद नहीं मिला।",
+        "outOfStock": "उत्पाद स्टॉक में नहीं"
+    },
+    "common": {
+        "outOfStock": "स्टॉक खत्म",
+        "addToCart": "कार्ट में जोड़ें",
+        "addToCartFailed": "कार्ट में जोड़ना असफल",
+        "noImage": "छवि नहीं",
+        "currencySymbolInr": "₹",
+        "total": "कुल"
+    },
+    "footer": {
+        "shop": "दुकान",
+        "allProducts": "सभी उत्पाद",
+        "newArrivals": "नए आगमन",
+        "bestSellers": "सबसे ज्यादा बिकने वाले",
+        "company": "कंपनी",
+        "aboutUs": "हमारे बारे में",
+        "careers": "करियर",
+        "press": "प्रेस",
+        "support": "सहायता",
+        "contactUs": "संपर्क करें",
+        "faqs": "सामान्य प्रश्न",
+        "returns": "रिटर्न्स",
+        "legal": "कानूनी",
+        "privacyPolicy": "गोपनीयता नीति",
+        "terms": "सेवा की शर्तें",
+        "cookiePolicy": "कुकी नीति",
+        "copyright": "© 2025 पल्लीहाट. सर्वाधिकार सुरक्षित।"
+    },
+    "carousel": {
+        "slide1": {
+            "title": "सीधे अपने खेत से बेचें",
+            "subtitle": "बिचौलियों के बिना सीधे खरीदारों से जुड़ें",
+            "cta": "किसान के रूप में रजिस्टर करें"
+        },
+        "slide2": {
+            "title": "स्थानीय खेतों से ताज़ा खरीदें",
+            "subtitle": "अपने क्षेत्र के उत्पादकों से सबसे ताज़ी उपज प्राप्त करें",
+            "cta": "उत्पाद देखें"
+        },
+        "slide3": {
+            "title": "सबके लिए उचित दाम",
+            "subtitle": "किसानों को अधिक कमाई, खरीदारों को कम कीमत - कोई छिपा शुल्क नहीं",
+            "cta": "कैसे काम करता है"
+        }
+    },
+    "producerAuth": {
+        "signup": {
+            "headerTitle": "हमारे उत्पादक मार्केटप्लेस से जुड़ें",
+            "headerSubtitle": "खरीदारों से सीधे जुड़ें और अपना व्यवसाय बढ़ाएँ",
+            "steps": {
+                "details": "उत्पादक विवरण",
+                "addressKyc": "पता और केवाईसी",
+                "documents": "केवाईसी दस्तावेज़"
+            },
+            "section": {
+                "infoTitle": "उत्पादक जानकारी",
+                "infoSubtitle": "हमें अपने मार्केटप्लेस या उत्पादक प्रोफ़ाइल के बारे में बताएं",
+                "addressTitle": "पता और सत्यापन",
+                "addressSubtitle": "अपना पंजीकरण पूरा करें",
+                "businessAddressTitle": "फार्म/व्यावसायिक पता",
+                "aadhaarTitle": "आधार सत्यापन",
+                "aadhaarSubtitle": "पते के सत्यापन के लिए अपना आधार कार्ड अपलोड करें",
+                "idProofTitle": "पहचान प्रमाण दस्तावेज़",
+                "idProofHint": "सरकारी पहचान (आधार, पैन, ड्राइविंग लाइसेंस) अपलोड करें",
+                "addressProofTitle": "पते का प्रमाण",
+                "addressProofHint": "यूटिलिटी बिल, बैंक स्टेटमेंट आदि अपलोड करें",
+                "secureNote": "आपकी जानकारी सुरक्षित है और केवल सत्यापन के लिए उपयोग की जाएगी"
+            },
+            "labels": {
+                "email": "ईमेल पता",
+                "password": "पासवर्ड",
+                "marketplaceName": "मार्केटप्लेस का नाम",
+                "phoneNumber": "फ़ोन नंबर",
+                "categories": "श्रेणियाँ",
+                "description": "मार्केटप्लेस विवरण",
+                "addressLine1": "पता पंक्ति 1",
+                "addressLine2": "पता पंक्ति 2",
+                "city": "शहर",
+                "state": "राज्य",
+                "postalCode": "पिन कोड",
+                "country": "देश",
+                "useAadhaarAsBusiness": "आधार पते को व्यावसायिक पते के रूप में उपयोग करें"
+            },
+            "placeholders": {
+                "email": "आपका ईमेल",
+                "password": "पासवर्ड बनाएँ",
+                "marketplaceName": "उदा., ग्रीन वैली मार्केट",
+                "phoneNumber": "+91 XXX XXX XXXX",
+                "categories": "आप क्या उगाते हैं, चुनें...",
+                "description": "अपनी खेती की पद्धतियों, उत्पादों और कहानी के बारे में बताएं...",
+                "addressLine1": "गली/मोहल्ला",
+                "addressLine2": "लैंडमार्क, गाँव",
+                "city": "शहर",
+                "state": "राज्य",
+                "postalCode": "पिन कोड"
+            },
+            "buttons": {
+                "chooseAadhaarImages": "आधार छवियाँ चुनें",
+                "addId": "आईडी जोड़ें",
+                "addProof": "प्रूफ जोड़ें",
+                "continueToAddress": "पते पर जाएँ",
+                "continueToDocuments": "दस्तावेज़ों पर जाएँ",
+                "backToDetails": "← फार्म विवरण पर वापस",
+                "backToVerification": "← सत्यापन पर वापस",
+                "completeRegistration": "पंजीकरण पूर्ण करें",
+                "registering": "फार्म पंजीकृत हो रहा है..."
+            },
+            "status": {
+                "readingAadhaar": "आधार पढ़ा जा रहा है..."
+            },
+            "links": {
+                "alreadyHaveAccount": "← क्या आपके पास पहले से खाता है?"
+            },
+            "toasts": {
+                "uploadAadhaarFirst": "पहले अपना आधार कार्ड अपलोड करें",
+                "parseAadhaarFailed": "आधार पढ़ने में विफल",
+                "invalidAadhaar": "आधार अमान्य है या स्पष्ट नहीं है। कृपया स्पष्ट छवियाँ अपलोड करें।",
+                "selectCategory": "कृपया कम से कम एक श्रेणी चुनें।",
+                "fillBusinessAddressOrSame": "कृपया व्यवसाय का प��ा भरें या 'स्थायी जैसा' विकल्प चुनें।",
+                "uploadBothKyc": "कृपया दोनों केवाईसी दस्तावेज़ प्रकार अपलोड करें।",
+                "allFieldsRequired": "आगे बढ़ने से पहले सभी फ़ील्ड भरें।",
+                "signupCompleteLoggedIn": "साइनअप पूरा।",
+                "signupSuccessPleaseLogin": "साइनअप सफल! कृपया लॉग इन करें।",
+                "signupFailed": "साइनअप विफल"
+            }
+        },
+        "signin": {
+            "headerTitle": "उत्पादक लॉगिन",
+            "headerSubtitle": "अपने उत्पादक डैशबोर्ड तक पहुँचें",
+            "labels": {
+                "email": "ईमेल पता",
+                "password": "पासवर्ड"
+            },
+            "placeholders": {
+                "email": "आपका ईमेल",
+                "password": "पासवर्ड"
+            },
+            "buttons": {
+                "signIn": "लॉगिन",
+                "signingIn": "लॉगिन हो रहा है..."
+            },
+            "links": {
+                "dontHaveAccount": "क्या आपका खाता नहीं है?",
+                "signUp": "रजिस्टर"
+            },
+            "section": {
+                "secureNote": "आपकी जानकारी सुरक्षित है और केवल प्रमाणीकरण के लिए उपयोग की जाएगी"
+            },
+            "toasts": {
+                "allFieldsRequired": "कृपया ईमेल और पासवर्ड दर्ज करें",
+                "welcomeBack": "लॉगिन सफल!",
+                "invalidCredentials": "लॉगिन विफल"
+            }
+        },
+        "waiting": {
+            "headerTitle": "सत्यापन प्रगति पर है",
+            "status": {
+                "approved": "आपका केवाईसी स्वीकृत हो गया है",
+                "rejected": "केवाईसी अस्वीकृत",
+                "pending": "केवाईसी की समीक्षा चल रही है"
+            },
+            "descriptions": {
+                "rejected": "आपका केवाईसी स्वीकृत नहीं हुआ। कृपया दस्तावेज़ अपडेट करें और पुनः जमा करें।",
+                "pending": "हम आपके केवाईसी दस्तावेज़ों की समीक्षा कर रहे हैं। इसमें थोड़ा समय लग सकता है।"
+            },
+            "buttons": {
+                "updateDocuments": "केवाईसी दस्तावेज़ अपडेट करें",
+                "checking": "जाँच हो रही है...",
+                "checkStatus": "स्थिति जाँचें"
+            },
+            "lastChecked": "अंतिम जाँच",
+            "autoRefresh": "हर 60 सेकंड में स्वतः ताज़ा",
+            "footerNote": "जैसे ही आपका केवाईसी स्वीकृत होगा, आपको डैशबोर्ड पर भेज दिया जाएगा।",
+            "links": {
+                "needHelp": "मदद चाहिए?"
+            }
+        }
+    },
+    "producer": {
+        "dashboard": {
+            "welcome": "वापसी पर स्वागत है",
+            "subtitle": "आपका फार्म बिज़नेस डैशबोर्ड",
+            "updateProfile": "प्रोफ़ाइल अपडेट करें",
+            "fullAnalytics": "पूर्ण एनालिटिक्स",
+            "profileCard": {
+                "defaultBusinessName": "आपका फार्म व्यवसाय"
+            },
+            "kpis": {
+                "totalOrders": {
+                    "title": "कुल ऑर्डर",
+                    "subtitle": "सभी समय के ऑर्डर"
+                },
+                "grossRevenue": {
+                    "title": "कुल राजस्व",
+                    "subtitle": "कुल कमाई"
+                },
+                "avgRating": {
+                    "title": "औसत रेटिंग",
+                    "subtitle": "({count} समीक्षाएँ)"
+                }
+            },
+            "charts": {
+                "ordersRevenue": {
+                    "title": "ऑर्डर और राजस्व रुझान"
+                },
+                "rangeLast10": "पिछले 10 दिन",
+                "ordersLabel": "ऑर्डर",
+                "revenueLabel": "राजस्व (₹)"
+            },
+            "ratings": {
+                "title": "ग्राहक रेटिंग",
+                "avgPrefix": "औसत:"
+            },
+            "businessInfo": {
+                "title": "व्यवसाय जानकारी",
+                "phone": "फोन नंबर",
+                "email": "ईमेल पता",
+                "description": "व्यवसाय विवरण",
+                "categories": "व्यवसाय श्रेणियाँ"
+            },
+            "address": {
+                "title": "पता विवरण",
+                "businessAddress": "व्यवसाय पता",
+                "permanentAddress": "स्थायी पता",
+                "notSpecified": "उल्लेखित नहीं"
+            },
+            "quickActions": {
+                "title": "त्वरित क्रियाएँ",
+                "products": {
+                    "title": "उत्पाद",
+                    "subtitle": "इन्वेंटरी प्रबंधित करें"
+                },
+                "orders": {
+                    "title": "ऑर्डर",
+                    "subtitle": "ऑर्डर देखें"
+                },
+                "analytics": {
+                    "title": "एनालिटिक्स",
+                    "subtitle": "रिपोर्ट देखें"
+                },
+                "profile": {
+                    "title": "प्रोफ़ाइल",
+                    "subtitle": "विवरण अपडेट करें"
+                }
+            }
+        },
+        "products": {
+            "header": {
+                "title": "उत्पाद प्रबंधन",
+                "subtitle": "अपने फार्म उत्पाद और इन्वेंटरी प्रबंधित करें",
+                "addNew": "नया उत्पाद जोड़ें"
+            },
+            "stats": {
+                "total": "कुल उत्पाद",
+                "low": "कम स्टॉक",
+                "out": "स्टॉक समाप्त"
+            },
+            "search": {
+                "placeholder": "अपने उत्पाद खोजें..."
+            },
+            "filter": {
+                "label": "श्रेणी द्वारा फ़िल्टर करें",
+                "all": "सभी"
+            },
+            "empty": {
+                "title": "अभी तक कोई उत्पाद नहीं",
+                "subtitle": "अपना पहला उत्पाद जोड़कर शुरू करें",
+                "cta": "अपना पहला उत्पाद जोड़ें"
+            },
+            "card": {
+                "perUnit": "प्रति {size} {unit}",
+                "inStock": "{count} स्टॉक में",
+                "pricePerUnit": "प्रति {size} {unit} कीमत",
+                "viewReviews": "समीक्षाएँ देखें"
+            },
+            "loading": {
+                "more": "और उत्पाद लोड हो रहे हैं..."
+            },
+            "modal": {
+                "editTitle": "उत्पाद संपादित करें",
+                "addTitle": "नया उत्पाद जोड़ें",
+                "editSubtitle": "अपने उत्पाद विवरण अपडेट करें",
+                "addSubtitle": "अपने उत्पाद की जानकारी भरें"
+            },
+            "basicInfo": {
+                "title": "मूल जानकारी",
+                "productName": "उत्पाद नाम",
+                "productNamePlaceholder": "जैसे, ऑर्गैनिक टमाटर, ताज़ा दूध, आदि",
+                "description": "विवरण",
+                "descriptionPlaceholder": "अपने उत्पाद का वर्णन करें... (गुणवत्ता, ताजगी, खेती का तरीका, आदि)"
+            },
+            "pricing": {
+                "title": "मूल्य और स्टॉक",
+                "priceLabel": "कीमत (₹)",
+                "pricePlaceholder": "0.00",
+                "priceHelp": "एक विक्रय इकाई की कीमत",
+                "stockLabel": "उपलब्ध स्टॉक",
+                "stockPlaceholder": "0"
+            },
+            "unit": {
+                "title": "विक्रय इकाई",
+                "howItWorks": {
+                    "prefix": "कैसे काम करता है:",
+                    "text": "आप उत्पाद कैसे बेचेंगे सेट करें। उदाहरण: यदि आप 1-लीटर बोतल में दूध बेचते हैं, तो \"लीटर\" चुनें और इकाई आकार में \"1\" दर्ज करें।"
+                },
+                "typeLabel": "इकाई प्रकार",
+                "customPlaceholder": "अपनी इकाई दर्ज करें (जैसे, टोकरी, बोरी, जार)",
+                "sizeLabel": "इकाई आकार",
+                "sizePlaceholder": "जैसे, 1, 0.5, 250",
+                "sizeHelp": "एक विक्रय इकाई का आकार। उदाहरण: 0.5 आधा किलोग्राम के लिए, 250 का अर्थ 250ml, 1 एक पीस के लिए"
+            },
+            "discount": {
+                "title": "थो��� छूट (वैकल्पिक)",
+                "typeLabel": "छूट प्रकार",
+                "type": {
+                    "none": "कोई छूट नहीं",
+                    "percentage": "प्रतिशत (%)",
+                    "flat": "निरपेक्ष राशि (₹)"
+                },
+                "valueLabel": "छूट मूल्य",
+                "valuePlaceholderPercent": "उदा., 10 का अर्थ 10%",
+                "valuePlaceholderFlat": "उदा., 50 का अर्थ ₹50 की छूट",
+                "minQtyLabel": "छूट के लिए न्यूनतम मात्रा",
+                "minQtyPlaceholder": "उदा., 5",
+                "minQtyHelp": "{unit} की न्यूनतम संख्या आवश्यक",
+                "minSubtotalLabel": "छूट के लिए न्यूनतम ऑर्डर मूल्य (₹)",
+                "minSubtotalPlaceholder": "उदा., 500",
+                "minSubtotalHelp": "न्यूनतम कुल ऑर्डर राशि आवश्यक"
+            },
+            "category": {
+                "title": "श्रेणी",
+                "selectPlaceholder": "उत्पाद श्रेणी चुनें"
+            },
+            "images": {
+                "title": "उत्पाद चित्र (अधिकतम 5)",
+                "addImage": "चित्र जोड़ें",
+                "help": "अपने उत्पाद की स्पष्ट तस्वीरें अलग-अलग कोणों से जोड़ें"
+            },
+            "form": {
+                "cancel": "रद्द करें",
+                "uploading": "अपलोड हो रहा है...",
+                "updating": "अपडेट हो रहा है...",
+                "add": "उत्पाद जोड़ें",
+                "update": "उत्पाद अपडेट करें"
+            },
+            "delete": {
+                "title": "उत्पाद हटाएँ",
+                "prompt": "क्या आप निश्चित हैं कि आप \"{title}\" हटाना चाहते हैं? यह क्रिया वापस नहीं ली जा सकती।",
+                "cancel": "रद्द करें",
+                "deleting": "हटा रहे हैं...",
+                "confirm": "उत्पाद हटाएँ"
+            }
+        }
+    }
+}

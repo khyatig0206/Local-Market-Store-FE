@@ -1,0 +1,653 @@
+{
+    "site": {
+        "title": "ପଲ୍ଲିହାଟ"
+    },
+    "announcement": "ସ୍ଥାନୀୟ କୃଷକମାନଙ୍କ ପାଇଁ ପ୍ରଥମ ଡିଜିଟାଲ ମାର୍କେଟପ୍ଲେସ! ଆପଣଙ୍କ କୃଷି, ଉଦ୍ୟାନ ଏବଂ ମତ୍ସ୍ୟ ଉତ୍ପାଦନ ସିଧାସଳଖ ଖରିଦଦାରଙ୍କୁ ବିକ୍ରୟ କରନ୍ତୁ।",
+    "search": {
+        "placeholder": "ଫସଲ, ପଶୁଧନ, ମାଛ ଖୋଜନ୍ତୁ..."
+    },
+    "nav": {
+        "agri": "କୃଷି",
+        "horti": "ଉଦ୍ୟାନ",
+        "aqua": "ମତ୍ସ୍ୟ",
+        "sell": "ବିକ୍ରୟ",
+        "signIn": "ସାଇନ୍ ଇନ୍",
+        "signUp": "ପଞ୍ଜିକରଣ",
+        "cart": "କାର୍ଟ",
+        "account": "ଖାତା",
+        "myOrders": "ମୋ ଅର୍ଡର",
+        "logout": "ଲଗ୍ ଆଉଟ୍",
+        "viewAll": "ସମସ୍ତ ଦେଖନ୍ତୁ",
+        "mobile": {
+            "agriProducts": "କୃଷି ପଣ୍ୟ",
+            "horticulture": "ଉଦ୍ୟାନଚାସ",
+            "aquaculture": "ମତ୍ସ୍ୟ ଚାଷ",
+            "sellProduce": "ଆପଣଙ୍କ ଉତ୍ପାଦ ବିକ୍ରୟ କରନ୍ତୁ",
+            "myAccount": "ମୋ ଖାତା"
+        },
+        "language": "ଭାଷା"
+    },
+    "home": {
+        "shopByCategory": "ଶ୍ରେଣୀ ଅନୁସାରେ କିଣନ୍ତୁ",
+        "categoryDescription": "ସ୍ଥାନୀୟ କୃଷକ ଏବଂ ଉତ୍ପାଦକମାନଙ୍କଠାରୁ ସିଧାସଳଖ ତାଜା ଉତ୍ପାଦ ପାଆନ୍ତୁ। ପ୍ରତ୍ୟେକ କ୍ରୟ ସ୍ଥାୟୀ କୃଷିକୁ ସମର୍ଥନ କରେ।",
+        "featuredProducts": "ବିଶେଷ ପଣ୍ୟ",
+        "featuredProductsDescription": "ଆପଣଙ୍କ ଘର ପାଇଁ ଯତ୍ନ ସହ ଚୟନିତ ଗୁଣବତ୍ତା ଉତ୍ପାଦ",
+        "bestSellers": {
+            "description": "ଆମର ଗ୍ରାହକମାନଙ୍କ ଦ୍ୱାରା ସର୍ବାଧିକ ପସନ୍ଦ ହୋଇଥିବା ଉତ୍ପାଦ",
+            "loading": "ସର୍ବାଧିକ ବିକ୍ରିତ ଉତ୍ପାଦ ଲୋଡ୍ ହେଉଛି...",
+            "quickView": "ଦ୍ରୁତ ଦର୍ଶନ",
+            "badge": "ସର୍ବାଧିକ ବିକ୍ରିତ",
+            "noImage": "ଚିତ୍ର ନାହିଁ",
+            "popularity": "ଲୋକପ୍ରିୟତା"
+        },
+        "featuredProducers": {
+            "title": "ଆମ ଉତ୍ପାଦକମାନଙ୍କୁ ଭେଟନ୍ତୁ",
+            "description": "ଯତ୍ନ, ସମର୍ପଣ ଏବଂ ସ୍ଥାୟୀ ଅଭ୍ୟାସ ସହିତ ଆପଣଙ୍କ ଖାଦ୍ୟ ବୃଦ୍ଧି କରୁଥିବା ଉତ୍ସର୍ଗୀକୃତ ଉତ୍ପାଦକମାନଙ୍କ ସହିତ ସିଧାସଳଖ ଯୋଗାଯୋଗ କରନ୍ତୁ",
+            "loading": "ଆମର ଆଶ୍ଚର୍ଯ୍ୟଜନକ ଉତ୍ପାଦକ ଲୋଡ୍ ହେଉଛନ୍ତି...",
+            "viewProducts": "ଉତ୍ପାଦ ଦେଖନ୍ତୁ",
+            "viewAllProducers": "ସମସ୍ତ ଉତ୍ପାଦକ ଅନ୍ୱେଷଣ କରନ୍ତୁ",
+            "noLogo": "ଲୋଗୋ ନାହିଁ"
+        },
+        "testimonials": {
+            "title": "ଆମ ଗ୍ରାହକମାନଙ୍କ କହିବା",
+            "subtitle": "ଆମ ଗ୍ରାହକମାନେ ଆମ ବିଷୟରେ କ'ଣ କୁହନ୍ତି",
+            "reviews": [
+                {
+                    "quote": "ଉତ୍ପାଦର ଗୁଣବତ୍ତା ଅସାଧାରଣ! ସବୁକିଛି ତାଜା ଆସେ ଏବଂ ସୁପରମାର୍କେଟ ଉତ୍ପାଦ ଅପେକ୍ଷା ଅଧିକ ସମୟ ରହେ।",
+                    "author": "ସାରା ଜନ୍ସନ",
+                    "location": "ନିୟମିତ ଗ୍ରାହକ"
+                },
+                {
+                    "quote": "ଜଣେ ରୋଷେୟା ଭାବରେ, ମୁଁ କୃଷକମାନଙ୍କ ସହିତ ସିଧାସଳଖ ସଂଯୋଗର ପ୍ରଶଂସା କରେ। ଉପାଦାନଗୁଡିକ ମୋ ଖାଦ୍ୟକୁ ସ୍ବତନ୍ତ୍ର କରେ।",
+                    "author": "ମାଇକେଲ ଟୋରେସ",
+                    "location": "କାର୍ଯ୍ୟନିର୍ବାହୀ ରୋଷେୟା"
+                },
+                {
+                    "quote": "Pallihaat ସୁସ୍ଥ ଖାଇବାକୁ ଏତେ ସୁବିଧାଜନକ କଲା। ୱେବସାଇଟ୍ ସହଜ ଏବଂ ବିତରଣ ସର୍ବଦା ସମୟରେ ହୁଏ।",
+                    "author": "ଏମ୍ମା ଲସନ",
+                    "location": "ଘର ରାନ୍ଧୁଥିବା ବ୍ୟକ୍ତି"
+                }
+            ]
+        },
+        "newsletter": {
+            "title": "ଅଦ୍ୟତନ ରୁହନ୍ତୁ",
+            "subtitle": "ନୂତନ ପଣ୍ୟ ଏବଂ ପ୍ରସ୍ତାବ ପାଇଁ ଆମ ନ୍ୟୁଜ୍ଲେଟର୍ ଯୋଗଦିଅନ୍ତୁ",
+            "emailPlaceholder": "ଆପଣଙ୍କ ଇମେଲ୍ ଠିକଣା",
+            "subscribe": "ସବସ୍କ୍ରାଇବ୍"
+        },
+        "valueProps": {
+            "directFromFarm": {
+                "title": "ସିଧା କ୍ଷେତରୁ",
+                "description": "ସ୍ଥାନୀୟ କୃଷକମାନଙ୍କଠାରୁ ସିଧା ଆପଣଙ୍କ ଘରଦ୍ୱାରକୁ"
+            },
+            "qualityAssured": {
+                "title": "ଗୁଣବତ୍ତା ସୁନିଶ୍ଚିତ",
+                "description": "100% ଜୈବିକ ଏବଂ ଗୁଣବତ୍ତା-ପରୀକ୍ଷିତ ପଣ୍ୟ"
+            },
+            "fastDelivery": {
+                "title": "ତ୍ୱରିତ ବିତରଣ",
+                "description": "ଅଧିକାଂଶ ଅଞ୍ଚଳରେ ପରବର୍ତ୍ତୀ ଦିନ ବିତରଣ"
+            },
+            "securePayment": {
+                "title": "ସୁରକ୍ଷିତ ପେମେଣ୍ଟ",
+                "description": "ସୁରକ୍ଷିତ ଏବଂ ଏନକ୍ରିପ୍ଟେଡ୍ କାରବାର"
+            }
+        },
+        "categoryProducts": {
+            "freshFromFarms": "ସ୍ଥାନୀୟ କ୍ଷେତରୁ ତାଜା",
+            "byProducer": "ଦ୍ୱାରା",
+            "perUnit": "ପ୍ରତି",
+            "onlyLeft": "କେବଳ {count} ବାକି",
+            "sale": "ସେଲ୍"
+        }
+    },
+    "account": {
+        "title": "ମୋ ଖାତା",
+        "manageProfile": "ଆପଣଙ୍କ ପ୍ରୋଫାଇଲ୍ ଏବଂ ପସନ୍ଦଗୁଡିକ ପରିଚାଳନା କରନ୍ତୁ",
+        "quickLinks": "ଦ୍ରୁତ ଲିଙ୍କ",
+        "cart": "କାର୍ଟ",
+        "orders": "ଅର୍ଡର",
+        "disputesSupport": "ବିବାଦ ଏବଂ ସହଯୋଗ",
+        "helpCenter": "ସହାୟତା କେନ୍ଦ୍ର",
+        "logout": "ଲଗ୍ ଆଉଟ୍",
+        "changePassword": "ପାସୱାର୍ଡ ବଦଳାନ୍ତୁ",
+        "updateSecurity": "ଆପଣଙ୍କ ସୁରକ୍ଷା ସନଦ ଅଦ୍ୟତନ କରନ୍ତୁ",
+        "accountStatus": "ଖାତା ସ୍ଥିତି",
+        "verifiedUser": "ସତ୍ୟାପିତ ବ୍ୟବହାରକାରୀ",
+        "profileInformation": "ପ୍ରୋଫାଇଲ୍ ସୂଚନା",
+        "updatePersonalDetails": "ଆପଣଙ୍କ ବ୍ୟକ୍ତିଗତ ସୂଚନା ଅଦ୍ୟତନ କରନ୍ତୁ",
+        "fullName": "ପୂର୍ଣ୍ଣ ନାମ",
+        "emailAddress": "ଇମେଲ୍ ଠିକଣା",
+        "emailLocked": "ଇମେଲ୍ ପରିବର୍ତ୍ତନ କରାଯାଇ ପାରିବ ନାହିଁ",
+        "saveChanges": "ପରିବର୍ତ୍ତନ ସଂରକ୍ଷଣ କରନ୍ତୁ",
+        "accountSecurity": "ଖାତା ସୁରକ୍ଷା",
+        "lastPasswordChange": "ଶେଷ ପାସୱାର୍ଡ ପରିବର୍ତ୍ତନ",
+        "twoFactor": "ଦୁଇ-ଘଟକ ପ୍ରମାଣୀକରଣ",
+        "notEnabled": "ସକ୍ରିୟ ନୁହେଁ",
+        "addressBook": "ଠିକଣା ପୁସ୍ତିକା",
+        "manageAddresses": "ଆପଣଙ୍କ ବିତରଣ ଠିକଣାଗୁଡିକ ପରିଚାଳନା କରନ୍ତୁ",
+        "newAddress": "ନୂତନ ଠିକଣା",
+        "noSavedAddresses": "କୌଣସି ସଂରକ୍ଷିତ ଠିକଣା ନାହିଁ",
+        "addYourFirstAddress": "ଆପଣଙ୍କ ପ୍ରଥମ ଠିକଣା ଯୋଡନ୍ତୁ",
+        "default": "ଡିଫଲ୍ଟ",
+        "addressModal": {
+            "titleAdd": "ନୂତନ ଠିକଣା ଯୋଡନ୍ତୁ",
+            "titleEdit": "ଠିକଣା ସମ୍ପାଦନ କରନ୍ତୁ",
+            "subtitleAdd": "ନୂତନ ବିତରଣ ଠିକଣା ଯୋଡନ୍ତୁ",
+            "subtitleEdit": "ଆପଣଙ୍କ ଠିକଣା ବିବରଣୀ ଅଦ୍ୟତନ କରନ୍ତୁ",
+            "label": "ଲେବେଲ୍",
+            "labelCustom": "କଷ୍ଟମ୍",
+            "labelHome": "ଘର",
+            "labelWork": "ଅଫିସ୍",
+            "labelOther": "ଅନ୍ୟ",
+            "contactName": "ସମ୍ପର୍କ ନାମ",
+            "contactPhone": "ସମ୍ପର୍କ ଫୋନ୍",
+            "phonePlaceholder": "10 ଅଙ୍କର ମୋବାଇଲ୍ ନମ୍ବର",
+            "addressLine1": "ଠିକଣା ଲାଇନ୍ 1",
+            "addressLine1Placeholder": "ଘର / ଫ୍ଲାଟ୍ / ଭବନ",
+            "addressLine2": "ଠିକଣା ଲାଇନ୍ 2",
+            "addressLine2Placeholder": "ରାସ୍ତା / ଅଞ୍ଚଳ / ପରିଚୟଚିହ୍ନ",
+            "city": "ସହର",
+            "state": "ରାଜ୍ୟ",
+            "postalCode": "ପୋଷ୍ଟାଲ କୋଡ୍",
+            "postalCodePlaceholder": "ପିନ କୋଡ୍",
+            "country": "ଦେଶ",
+            "setDefault": "ଡିଫଲ୍ଟ ଠିକଣା ଭାବେ ସେଟ୍ କରନ୍ତୁ",
+            "cancel": "ବାତିଲ୍",
+            "update": "ଠିକଣା ଅଦ୍ୟତନ କରନ୍ତୁ",
+            "add": "ଠିକଣା ଯୋଡନ୍ତୁ",
+            "updating": "ଅଦ୍ୟତନ ହେଉଛି...",
+            "adding": "ଯୋଡାଯାଉଛି...",
+            "fullNamePlaceholder": "ପୂର୍ଣ୍ଣ ନାମ"
+        }
+    },
+    "bestSellers": {
+        "title": "ସର୍ବାଧିକ ବିକ୍ରିତ",
+        "viewAll": "ସମସ୍ତ ଦେଖନ୍ତୁ",
+        "empty": "ଏତେବେଳେ କୌଣସି ସର୍ବାଧିକ ବିକ୍ରିତ ପଣ୍ୟ ନାହିଁ।"
+    },
+    "shop": {
+        "title": "ପଣ୍ୟ କିଣନ୍ତୁ",
+        "filters": "ଫିଲ୍ଟର",
+        "headerSubtitle": "ବିଶ୍ୱସନୀୟ ଉତ୍ପାଦକଙ୍କୁଠାରୁ ସିଧାସଳଖ ତାଜା, ସ୍ଥାନୀୟ ପଣ୍ୟ ଅନ୍ୱେଷଣ କରନ୍ତୁ",
+        "showingResultsFor": "“{query}” ପାଇଁ ଫଳାଫଳ ଦେଖାଯାଉଛି",
+        "itemsCount": "{count} ଆଇଟମ୍",
+        "filter": "ଫିଲ୍ଟର",
+        "category": "ଶ୍ରେଣୀ",
+        "categoryLabel": "ଶ୍ରେଣୀ",
+        "clearCategory": "ଶ୍ରେଣୀ ସଫା କରନ୍ତୁ",
+        "priceRange": "ଦାମ ରେଞ୍ଜ",
+        "min": "ନ୍ୟୁନତମ",
+        "max": "ଅଧିକତମ",
+        "resetPrice": "ଦାମ ପୁନଃସେଟ୍",
+        "clear": "ସଫା କରନ୍ତୁ",
+        "price": "ଦାମ",
+        "reset": "ପୁନଃସେଟ୍",
+        "unit": "ଇକାଇ",
+        "unitGeneric": "ଇକାଇ",
+        "per": "ପ୍ରତି",
+        "all": "ସମସ୍ତ",
+        "inStockOnly": "ମାତ୍ର ଷ୍ଟକ୍ ରେ",
+        "discountOnly": "ଛୁଟ ଥିବା ପଣ୍ୟ",
+        "sortBy": "ଅନୁସାରେ ଖୋଜନ୍ତୁ",
+        "sort": {
+            "newest": "ନୂତନତମ",
+            "priceLowToHigh": "ଦାମ: କମ୍ ରୁ ଅଧିକ",
+            "priceHighToLow": "ଦାମ: ଅଧିକ ରୁ କମ୍",
+            "rating": "ରେଟିଂ"
+        },
+        "refineSearch": "ଆପଣଙ୍କ ଖୋଜକୁ ସୁନିଶ୍ଚିତ କରନ୍ତୁ",
+        "queryLabel": "ଖୋଜ",
+        "inStock": "ଷ୍ଟକ୍ ରେ",
+        "discount": "ଛୁଟ",
+        "sale": "ସେଲ୍",
+        "view": "ଦେଖନ୍ତୁ",
+        "viewDetails": "ବିବରଣୀ",
+        "noProducts": "କୌଣସି ପଣ୍ୟ ମିଳିଲା ନାହିଁ।"
+    },
+    "orders": {
+        "title": "ମୋ ଅର୍ଡର",
+        "myDisputes": "ମୋ ବିବାଦ",
+        "refresh": "ରିଫ୍ରେଶ",
+        "loading": "ଆପଣଙ୍କ ଅର୍ଡରଗୁଡିକ ଲୋଡ୍ ହେଉଛି...",
+        "empty": "ଆପଣ ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଅର୍ଡର କରିନାହାନ୍ତି।",
+        "goToShop": "ଦୋକାନକୁ ଯାଆନ୍ତୁ",
+        "orderId": "ଅର୍ଡର ଆଇଡି",
+        "openDispute": "ବିବାଦ ଖୋଲନ୍ତୁ",
+        "openDisputeOrder": "ବିବାଦ ଖୋଲନ୍ତୁ (ଅର୍ଡର)",
+        "items": "ଆଇଟମ୍",
+        "address": "ଠିକଣା",
+        "payment": "ପେମେଣ୍ଟ",
+        "total": "ମୋଟ",
+        "status": "ସ୍ଥିତି"
+    },
+    "disputes": {
+        "title": "ମୋ ବିବାଦ",
+        "listTitle": "ମୋ ବିବାଦ",
+        "refresh": "ରିଫ୍ରେଶ",
+        "empty": "କୌଣସି ବିବାଦ ନାହିଁ।",
+        "emptyTitle": "କୌଣସି ବିବାଦ ନାହିଁ",
+        "emptyDescription": "ଆପଣ ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ବିବାଦ ଖୋଲିନାହାନ୍ତି।",
+        "selectPrompt": "ବାର୍ତ୍ତା ଦେଖିବା ପାଇଁ ଏକ ବିବାଦ ବାଛନ୍ତୁ",
+        "writeReply": "ଉତ୍ତର ଲେଖନ୍ତୁ…",
+        "sending": "ପଠାଯାଉଛି…",
+        "send": "ପଠାନ୍ତୁ"
+    },
+    "cart": {
+        "addedToCart": "କାର୍ଟକୁ ଯୋଡାଗଲା",
+        "updated": "କାର୍ଟ ଅଦ୍ୟତନ ହେଲା।",
+        "viewCart": "କାର୍ଟ ଦେଖନ୍ତୁ",
+        "checkout": "ଚେକଆଉଟ୍"
+    },
+    "cartPage": {
+        "title": "ଶପିଙ୍ଗ୍ କାର୍ଟ",
+        "loading": "ଲୋଡ୍ ହେଉଛି...",
+        "empty": "ଆପଣଙ୍କ କାର୍ଟ ଖାଲି ଅଛି।",
+        "product": "ପଣ୍ୟ",
+        "price": "ଦର",
+        "quantity": "ପରିମାଣ",
+        "subtotal": "ଉପ-ଯୋଗ",
+        "checkout": "ଚେକଆଉଟ୍",
+        "itemsCount": "ଆଇଟମ୍: {count}",
+        "cartItemsHeading": "କାର୍ଟ ଆଇଟମ୍",
+        "continueShopping": "କିଣିବା ଜାରି ରଖନ୍ତୁ",
+        "orderSummary": "ଅର୍ଡର ସାରାଂଶ",
+        "itemsLabel": "ଆଇଟମ୍",
+        "shipping": "ସିପିଙ୍ଗ୍",
+        "free": "ନିଶୁଳ୍କ",
+        "deliveryEta": "3-5 ଦିନ ମଧ୍ୟରେ ଡିଲିଭରି",
+        "totalAmount": "ମୋଟ ରାଶି",
+        "proceedToCheckout": "ଚେକଆଉଟ୍ କୁ ଯାଆନ୍ତୁ",
+        "processing": "ପ୍ରୋସେସିଂ...",
+        "secureCheckout": "ସୁରକ୍ଷିତ ଚେକଆଉଟ୍ · SSL ଇଂକ୍ରିପ୍ଟେଡ୍",
+        "savedAddresses": "ସଂରକ୍ଷିତ ଠିକଣାଗୁଡିକ",
+        "selectAddress": "ଏକ ଠିକଣା ବାଛନ୍ତୁ…",
+        "fullName": "ପୂର୍ଣ୍ଣ ନାମ",
+        "recipientName": "ଗ୍ରାହକଙ୍କ ନାମ",
+        "phone": "ଫୋନ୍",
+        "phonePlaceholder": "10 ଅଙ୍କର ମୋବାଇଲ୍ ନମ୍ବର",
+        "addressLine1": "ଠିକଣା ଲାଇନ୍ 1",
+        "houseFlatBuilding": "ଘର / ଫ୍ଲାଟ୍ / ଭବନ",
+        "addressLine2Optional": "ଠିକଣା ଲାଇନ୍ 2 (ଇଚ୍ଛାନୁସାରେ)",
+        "streetAreaLandmark": "ରାସ୍ତା / ଅଞ୍ଚଳ / ପରିଚୟଚିହ୍ନ",
+        "city": "ସହର",
+        "state": "ରାଜ୍ୟ",
+        "stateRegion": "ରାଜ୍ୟ / ଅଞ୍ଚଳ",
+        "postalCode": "ପୋଷ୍ଟାଲ କୋଡ୍",
+        "pincode": "ପିନକୋଡ୍",
+        "country": "ଦେଶ",
+        "countryPlaceholder": "ଦେଶ",
+        "paymentMethod": "ପେମେଣ୍ଟ ପ୍ରକାର",
+        "cod": "କ୍ୟାସ୍ ଅନ୍ ଡିଲିଭରି (COD)",
+        "prepaid": "ପ୍ରିପେଡ୍ (ଅନଲାଇନ୍)",
+        "saveThisAddress": "ଏହି ଠିକଣା ସଂରକ୍ଷଣ କରନ୍ତୁ",
+        "setAsDefault": "ଡିଫଲ୍ଟ ଭାବେ ସେଟ୍ କରନ୍ତୁ",
+        "cancel": "ବାତିଲ୍",
+        "requiredAddressFields": "ଦୟାକରି ସମସ୍ତ ଆବଶ୍ୟକ ଠିକଣା ଫିଲ୍ଡ ପୂରଣ କରନ୍ତୁ",
+        "updateQtyFailed": "ପରିମାଣ ଅଦ୍ୟତନ ବିଫଳ",
+        "removeItemFailed": "ଆଇଟମ୍ ବିଲୋପ ବିଫଳ",
+        "paymentGatewayFailed": "ପେମେଣ୍ଟ ଗେଟୱେ ଲୋଡ୍ ବିଫଳ",
+        "paymentSuccess": "ପେମେଣ୍ଟ ସଫଳ ଏବଂ ଅର୍ଡର ନିଶ୍ଚିତ",
+        "paymentVerifyFailed": "ପେମେଣ୍ଟ ସତ୍ୟାପନ ବିଫଳ",
+        "paymentCancelled": "ପେମେଣ୍ଟ ବାତିଲ୍",
+        "orderPlaced": "ଅର୍ଡର ସଫଳଭାବେ ହେଲା",
+        "orderFailed": "ଅର୍ଡର ବିଫଳ"
+    },
+    "product": {
+        "notFound": "ପଣ୍ୟ ମିଳିଲା ନାହିଁ।",
+        "outOfStock": "ପଣ୍ୟ ଷ୍ଟକ୍ ନାହିଁ"
+    },
+    "common": {
+        "outOfStock": "ଷ୍ଟକ୍ ନାହିଁ",
+        "addToCart": "କାର୍ଟକୁ ଯୋଡନ୍ତୁ",
+        "addToCartFailed": "କାର୍ଟକୁ ଯୋଡିବାରେ ବିଫଳ",
+        "noImage": "ଛବି ନାହିଁ",
+        "currencySymbolInr": "₹",
+        "total": "ମୋଟ"
+    },
+    "footer": {
+        "shop": "ଦୋକାନ",
+        "allProducts": "ସମସ୍ତ ପଣ୍ୟ",
+        "newArrivals": "ନୂତନ ଆଗମନ",
+        "bestSellers": "ସର୍ବାଧିକ ବିକ୍ରିତ",
+        "company": "କମ୍ପାନୀ",
+        "aboutUs": "ଆମ ବିଷୟରେ",
+        "careers": "ଚାକିରି",
+        "press": " ପ୍ରେସ୍",
+        "support": "ସହଯୋଗ",
+        "contactUs": "ଯୋଗାଯୋଗ",
+        "faqs": "ପ୍ରଶ୍ନୋତ୍ତର",
+        "returns": "ରିଟର୍ନ୍",
+        "legal": "ଆଇନଗତ",
+        "privacyPolicy": "ଗୋପନୀୟତା ନୀତି",
+        "terms": "ସେବା ସର୍ତ୍ତ",
+        "cookiePolicy": "କୁକି ନୀତି",
+        "copyright": "© 2025 ପଲ୍ଲିହାଟ। ସମସ୍ତ ଅଧିକାର ସଂରକ୍ଷିତ।"
+    },
+    "carousel": {
+        "slide1": {
+            "title": "ସିଧା କ୍ଷେତ୍ରରୁ ବିକ୍ରୟ କରନ୍ତୁ",
+            "subtitle": "ମଧ୍ୟସ୍ଥ ବିନା ସିଧାସଳଖ ଖରିଦଦାରଙ୍କ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ",
+            "cta": "କୃଷକ ଭାବେ ପଞ୍ଜିକରଣ କରନ୍ତୁ"
+        },
+        "slide2": {
+            "title": "ସ୍ଥାନୀୟ କ୍ଷେତ୍ରରୁ ତାଜା କିଣନ୍ତୁ",
+            "subtitle": "ଆପଣଙ୍କ ଅଞ୍ଚଳର ଉତ୍ପାଦକଙ୍କ ପାଖରୁ ସବୁଠାରୁ ତାଜା ଉତ୍ପାଦ ପାଆନ୍ତୁ",
+            "cta": "ଉତ୍ପାଦ ଦେଖନ୍ତୁ"
+        },
+        "slide3": {
+            "title": "ସମସ୍ତଙ୍କ ପାଇଁ ନ୍ୟାୟସଙ୍ଗତ ଦାମ",
+            "subtitle": "କୃଷକମାନେ ଅଧିକ ଅର୍ଜନ କରନ୍ତି, ଖରିଦଦାରମାନେ କମ ଦେଇ - କୌଣସି ଲୁଚିତ ଖର୍ଚ୍ଚ ନାହିଁ",
+            "cta": "କିପରି କାମ କରେ"
+        }
+    },
+    "producerAuth": {
+        "signup": {
+            "headerTitle": "ଆମ ପ୍ରୋଡ୍ୟୁସର୍ ମାର୍କେଟପ୍ଲେସ୍‌ରେ ଯୋଗଦିଅନ୍ତୁ",
+            "headerSubtitle": "ଖରିଦଦାରଙ୍କ ସହିତ ସିଧାସଳଖ ଯୋଗାଯୋଗ କରନ୍ତୁ ଏବଂ ବ୍ୟବସାୟ ବୃଦ୍ଧି କରନ୍ତୁ",
+            "steps": {
+                "details": "ପ୍ରୋଡ୍ୟୁସର୍ ବିବରଣୀ",
+                "addressKyc": "ଠିକଣା ଏବଂ KYC",
+                "documents": "KYC ଡକ୍ୟୁମେଣ୍ଟସ୍"
+            },
+            "section": {
+                "infoTitle": "ପ୍ରୋଡ୍ୟୁସର୍ ସୂଚନା",
+                "infoSubtitle": "ଆପଣଙ୍କ ମାର୍କେଟପ୍ଲେସ୍ କିମ୍ବା ପ୍ରୋଡ୍ୟୁସର୍ ପ୍ରୋଫାଇଲ୍ ବିଷୟରେ କହନ୍ତୁ",
+                "addressTitle": "ଠିକଣା ଏବଂ ସତ୍ୟାପନ",
+                "addressSubtitle": "ଆପଣଙ୍କ ପଞ୍ଜିକରଣ ପୂରା କରନ୍ତୁ",
+                "businessAddressTitle": "ଖେତି/ବ୍ୟବସାୟ ଠିକଣା",
+                "aadhaarTitle": "ଆଧାର ସତ୍ୟାପନ",
+                "aadhaarSubtitle": "ଠିକଣା ସତ୍ୟାପନ ପାଇଁ ଆଧାର କାର୍ଡ ଅପଲୋଡ୍ କରନ୍ତୁ",
+                "idProofTitle": "ପରିଚୟ ପ୍ରମାଣ ପତ୍ର",
+                "idProofHint": "ସରକାରୀ ଆଇଡି (Aadhar, PAN, ଡ୍ରାଇଭିଂ ଲାଇସେନ୍ସ) ଅପଲୋଡ୍ କରନ୍ତୁ",
+                "addressProofTitle": "ଠିକଣା ପ୍ରମାଣ",
+                "addressProofHint": "ୟୁଟିଲିଟି ବିଲ୍, ବ୍ୟାଙ୍କ ଷ୍ଟେଟମେଣ୍ଟ ଇତ୍ୟାଦି ଅପଲୋଡ୍ କରନ୍ତୁ",
+                "secureNote": "ଆପଣଙ୍କ ସୂଚନା ସୁରକ୍ଷିତ ଏବଂ କେବଳ ସତ୍ୟାପନ ପାଇଁ ବ୍ୟବହୃତ ହେବ"
+            },
+            "labels": {
+                "email": "ଇମେଲ୍ ଠିକଣା",
+                "password": "ପାସୱାର୍ଡ",
+                "marketplaceName": "ମାର୍କେଟପ୍ଲେସ୍ ନାମ",
+                "phoneNumber": "ଫୋନ୍ ନମ୍ବର",
+                "categories": "ଶ୍ରେଣୀଗୁଡିକ",
+                "description": "ମାର୍କେଟପ୍ଲେସ୍ ବିବରଣୀ",
+                "addressLine1": "ଠିକଣା ଲାଇନ୍ 1",
+                "addressLine2": "ଠିକଣା ଲାଇନ୍ 2",
+                "city": "ସହର",
+                "state": "ରାଜ୍ୟ",
+                "postalCode": "ପିନ କୋଡ୍",
+                "country": "ଦେଶ",
+                "useAadhaarAsBusiness": "ଆଧାର ଠିକଣାକୁ ବ୍ୟବସାୟ ଠିକଣା ଭାବେ ବ୍ୟବହାର କରନ୍ତୁ"
+            },
+            "placeholders": {
+                "email": "ଆପଣଙ୍କ ଇମେଲ୍",
+                "password": "ପାସୱାର୍ଡ ତିଆରି କରନ୍ତୁ",
+                "marketplaceName": "ଉଦାହରଣ, ଗ୍ରିନ୍ ଭ୍ୟାଲି ମାର୍କେଟ୍",
+                "phoneNumber": "+91 XXX XXX XXXX",
+                "categories": "ଆପଣ କଂହା ଚାଷ କରନ୍ତି ବାଛନ୍ତୁ...",
+                "description": "ଆପଣଙ୍କ ଚାଷ ପ୍ରକ୍ରିୟା, ପଣ୍ୟ ଏବଂ କାହାଣୀ ବିଷୟରେ କହନ୍ତୁ...",
+                "addressLine1": "ରାସ୍ତାର ଠିକଣା",
+                "addressLine2": "ଲ୍ୟାଣ୍ଡମାର୍କ, ଗାଁ",
+                "city": "ସହର",
+                "state": "ରାଜ୍ୟ",
+                "postalCode": "ପିନ କୋଡ୍"
+            },
+            "buttons": {
+                "chooseAadhaarImages": "ଆଧାର ଛବି ବାଛନ୍ତୁ",
+                "addId": "ଆଇଡି ଯୋଡନ୍ତୁ",
+                "addProof": "ପ୍ରୁଫ୍ ଯୋଡନ୍ତୁ",
+                "continueToAddress": "ଠିକଣାକୁ ଯାଆନ୍ତୁ",
+                "continueToDocuments": "ଡକ୍ୟୁମେଣ୍ଟସ୍ କୁ ଯାଆନ୍ତୁ",
+                "backToDetails": "← ଫାର୍ମ ବିବରଣୀକୁ ଫେରନ୍ତୁ",
+                "backToVerification": "← ଭେରିଫିକେଶନ୍ କୁ ଫେରନ୍ତୁ",
+                "completeRegistration": "ପଞ୍ଜିକରଣ ସମ୍ପୂର୍ଣ୍ଣ କରନ୍ତୁ",
+                "registering": "ଫାର୍ମ ପଞ୍ଜିକରଣ ହେଉଛି..."
+            },
+            "status": {
+                "readingAadhaar": "ଆଧାର ପଢ଼ାଯାଉଛି..."
+            },
+            "links": {
+                "alreadyHaveAccount": "← ଖାତା ଅଛି କି?"
+            },
+            "toasts": {
+                "uploadAadhaarFirst": "ପ୍ରଥମେ ଆଧାର କାର୍ଡ ଛବି ଅପଲୋଡ୍ କରନ୍ତୁ",
+                "parseAadhaarFailed": "ଆଧାର ପାର୍ସ ବିଫଳ",
+                "invalidAadhaar": "ଆଧାର ଅବୈଧ କିମ୍ବା ସ୍ପଷ୍ଟ ନୁହେଁ। ଦୟାକରି ଏକାଧିକ ସ୍ପଷ୍ଟ ଛବି ଅପଲୋଡ୍ କରନ୍ତୁ।",
+                "selectCategory": "କମସେକମ୍ ଗୋଟିଏ ଶ୍ରେଣୀ ବାଛନ୍ତୁ।",
+                "fillBusinessAddressOrSame": "ଦୟାକରି ବ୍ୟବସାୟ ଠିକଣା ପୂରଣ କରନ୍ତୁ କିମ୍ବା 'ସ୍ଥାୟୀ ଭଳି' ବିକଳ୍ପ ବାଛନ୍ତୁ।",
+                "uploadBothKyc": "ଦୟାକରି ଉଭୟ KYC ଡକ୍ୟୁମେଣ୍ଟ ପ୍ରକାର ଅପଲୋଡ୍ କରନ୍ତୁ।",
+                "allFieldsRequired": "ଆଗକୁ ବଢିବା ପୂର୍ବରୁ ସମସ୍ତ ଫିଲ୍ଡ ପୂରଣ କରନ୍ତୁ।",
+                "signupCompleteLoggedIn": "ସାଇନ୍‌ଅପ୍ ସମ୍ପୂର୍ଣ୍ଣ।",
+                "signupSuccessPleaseLogin": "ସାଇନ୍‌ଅପ୍ ସଫଳ! ଦୟାକରି ଲଗ୍ଇନ୍ କରନ୍ତୁ।",
+                "signupFailed": "ସାଇନ୍‌ଅପ୍ ବିଫଳ"
+            }
+        },
+        "signin": {
+            "headerTitle": "ପ୍ରୋଡ୍ୟୁସର୍ ଲଗଇନ୍",
+            "headerSubtitle": "ଆପଣଙ୍କ ପ୍ରୋଡ୍ୟୁସର୍ ଡ୍ୟାଶ୍‌ବୋର୍ଡକୁ ପ୍ରବେଶ କରନ୍ତୁ",
+            "labels": {
+                "email": "ଇମେଲ୍ ଠିକଣା",
+                "password": "ପାସୱାର୍ଡ"
+            },
+            "placeholders": {
+                "email": "ଆପଣଙ୍କ ଇମେଲ୍",
+                "password": "ପାସୱାର୍ଡ"
+            },
+            "buttons": {
+                "signIn": "ଲଗଇନ୍",
+                "signingIn": "ଲଗଇନ୍ ହେଉଛି..."
+            },
+            "links": {
+                "dontHaveAccount": "ଖାତା ନାହିଁ କି?",
+                "signUp": "ପଞ୍ଜିକରଣ"
+            },
+            "section": {
+                "secureNote": "ଆପଣଙ୍କ ସୂଚନା ସୁରକ୍ଷିତ ଏବଂ କେବଳ ପ୍ରମାଣୀକରଣ ଉଦ୍ଦେଶ୍ୟରେ ବ୍ୟବହୃତ ହେବ"
+            },
+            "toasts": {
+                "allFieldsRequired": "ଦୟାକରି ଇମେଲ୍ ଏବଂ ପାସୱାର୍ଡ ଦିଅନ୍ତୁ",
+                "welcomeBack": "ଲଗଇନ୍ ସଫଳ!",
+                "invalidCredentials": "ଲଗଇନ୍ ବିଫଳ"
+            }
+        },
+        "waiting": {
+            "headerTitle": "ଭେରିଫିକେଶନ୍ ଚାଲିଛି",
+            "status": {
+                "approved": "ଆପଣଙ୍କ KYC ଅନୁମୋଦିତ ହେଲା",
+                "rejected": "KYC ପ୍ରତ୍ୟାଖ୍ୟାନ",
+                "pending": "KYC ପରୀକ୍ଷାଧୀନ"
+            },
+            "descriptions": {
+                "rejected": "ଆପଣଙ୍କ KYC ଅନୁମୋଦିତ ହୋଇନି। ଦୟାକରି ଡକ୍ୟୁମେଣ୍ଟଗୁଡିକ ଅଦ୍ୟତନ କରି ପୁଣିଥରେ ଦାଖଲ କରନ୍ତୁ।",
+                "pending": "ଆମେ ଆପଣଙ୍କ KYC ଡକ୍ୟୁମେଣ୍ଟଗୁଡିକ ରିଭ୍ୟୁ କରୁଛୁ। ଏଥିରେ କିଛି ସମୟ ଲାଗିପାରେ।"
+            },
+            "buttons": {
+                "updateDocuments": "KYC ଡକ୍ୟୁମେଣ୍ଟ ଅଦ୍ୟତନ କରନ୍ତୁ",
+                "checking": "ଯାଞ୍ଚ ହେଉଛି...",
+                "checkStatus": "ସ୍ଥିତି ଯାଞ୍ଚ କରନ୍ତୁ"
+            },
+            "lastChecked": "ଶେଷ ଯାଞ୍ଚ",
+            "autoRefresh": "ପ୍ରତି 60 ସେକେଣ୍ଡରେ ସ୍ୱୟଂଚାଳିତ ଅଦ୍ୟତନ",
+            "footerNote": "ଆପଣଙ୍କ KYC ଅନୁମୋଦିତ ହେଲେ ଆପଣଙ୍କୁ ଡ୍ୟାଶ୍‌ବୋର୍ଡକୁ ନେଇଯିବ।",
+            "links": {
+                "needHelp": "ସହାୟତା ଦରକାର?"
+            }
+        }
+    },
+    "producer": {
+        "dashboard": {
+            "welcome": "ପୁନଃ ସ୍ବାଗତ",
+            "subtitle": "ଆପଣଙ୍କ ଫାର୍ମ ବ୍ୟବସାୟ ଡ୍ୟାଶବୋର୍ଡ",
+            "updateProfile": "ପ୍ରୋଫାଇଲ୍ ଅଦ୍ୟତନ କରନ୍ତୁ",
+            "fullAnalytics": "ସମ୍ପୂର୍ଣ୍ଣ ବିଶ୍ଳେଷଣ",
+            "profileCard": {
+                "defaultBusinessName": "ଆପଣଙ୍କ ଫାର୍ମ ବ୍ୟବସାୟ"
+            },
+            "kpis": {
+                "totalOrders": {
+                    "title": "ମୋଟ ଅର୍ଡର",
+                    "subtitle": "ସମସ୍ତ ସମୟର ଅର୍ଡର"
+                },
+                "grossRevenue": {
+                    "title": "ମୋଟ ଆୟ",
+                    "subtitle": "ମୋଟ ଆର୍ଜନ"
+                },
+                "avgRating": {
+                    "title": "ସର୍ବମୋଟ ମୂଲ୍ୟାଙ୍କନ",
+                    "subtitle": "({count} ସମୀକ୍ଷା)"
+                }
+            },
+            "charts": {
+                "ordersRevenue": {
+                    "title": "ଅର୍ଡର ଏବଂ ଆୟ ପ୍ରବଣତା"
+                },
+                "rangeLast10": "ଶେଷ 10 ଦିନ",
+                "ordersLabel": "ଅର୍ଡର",
+                "revenueLabel": "ଆୟ (₹)"
+            },
+            "ratings": {
+                "title": "ଗ୍ରାହକ ମୂଲ୍ୟାଙ୍କନ",
+                "avgPrefix": "ସର୍ବମୋଟ:"
+            },
+            "businessInfo": {
+                "title": "ବ୍ୟବସାୟ ସୂଚନା",
+                "phone": "ଫୋନ୍ ନମ୍ବର",
+                "email": "ଇମେଲ୍ ଠିକଣା",
+                "description": "ବ୍ୟବସାୟ ବର୍ଣ୍ଣନା",
+                "categories": "ବ୍ୟବସାୟ ଶ୍ରେଣୀ"
+            },
+            "address": {
+                "title": "ଠିକଣା ବିବରଣୀ",
+                "businessAddress": "ବ୍ୟବସାୟ ଠିକଣା",
+                "permanentAddress": "ସ୍ଥାୟୀ ଠିକଣା",
+                "notSpecified": "ଉଲ୍ଲେଖ ନାହିଁ"
+            },
+            "quickActions": {
+                "title": "ଦ୍ରୁତ କାର୍ଯ୍ୟ",
+                "products": {
+                    "title": "ଉତ୍ପାଦ",
+                    "subtitle": "ଇନଭେଣ୍ଟରି ପରିଚାଳନା କରନ୍ତୁ"
+                },
+                "orders": {
+                    "title": "ଅର୍ଡର",
+                    "subtitle": "ଅର୍ଡରଗୁଡ଼ିକ ଦେଖନ୍ତୁ"
+                },
+                "analytics": {
+                    "title": "ବିଶ୍ଳେଷଣ",
+                    "subtitle": "ରିପୋର୍ଟ ଦେଖନ୍ତୁ"
+                },
+                "profile": {
+                    "title": "ପ୍ରୋଫାଇଲ୍",
+                    "subtitle": "ବିବରଣୀ ଅଦ୍ୟତନ କରନ୍ତୁ"
+                }
+            }
+        },
+        "products": {
+            "header": {
+                "title": "ଉତ୍ପାଦ ପରିଚାଳନା",
+                "subtitle": "ଆପଣଙ୍କ ଫାର୍ମ ଉତ୍ପାଦ ଏବଂ ଇନଭେଣ୍ଟରି ପରିଚାଳନା କରନ୍ତୁ",
+                "addNew": "ନୂତନ ଉତ୍ପାଦ ଯୋଡନ୍ତୁ"
+            },
+            "stats": {
+                "total": "ମୋଟ ଉତ୍ପାଦ",
+                "low": "କମ୍ ଷ୍ଟକ୍",
+                "out": "ଷ୍ଟକ୍ ସମାପ୍ତ"
+            },
+            "search": {
+                "placeholder": "ଆପଣଙ୍କ ଉତ୍ପାଦ ଖୋଜନ୍ତୁ..."
+            },
+            "filter": {
+                "label": "ଶ୍ରେଣୀ ଅନୁସାରେ ଫିଲ୍ଟର କରନ୍ତୁ",
+                "all": "ସମସ୍ତ"
+            },
+            "empty": {
+                "title": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଉତ୍ପାଦ ନାହିଁ",
+                "subtitle": "ଆପଣଙ୍କ ପ୍ରଥମ ଉତ୍ପାଦ ଯୋଡି ଆରମ୍ଭ କରନ୍ତୁ",
+                "cta": "ଆପଣଙ୍କ ପ୍ରଥମ ଉତ୍ପାଦ ଯୋଡନ୍ତୁ"
+            },
+            "card": {
+                "perUnit": "ପ୍ରତି {size} {unit}",
+                "inStock": "{count} ଷ୍ଟକ୍ ରେ ଅଛି",
+                "pricePerUnit": "ପ୍ରତି {size} {unit} ଦର",
+                "viewReviews": "ସମୀକ୍ଷାଗୁଡିକ ଦେଖନ୍ତୁ"
+            },
+            "loading": {
+                "more": "ଅଧିକ ଉତ୍ପାଦ ଲୋଡ୍ ହେଉଛି..."
+            },
+            "modal": {
+                "editTitle": "ଉତ୍ପାଦ ସଂପାଦନ କରନ୍ତୁ",
+                "addTitle": "ନୂତନ ଉତ୍ପାଦ ଯୋଡନ୍ତୁ",
+                "editSubtitle": "ଆପଣଙ୍କ ଉତ୍ପାଦ ବିବରଣୀ ଅଦ୍ୟତନ କରନ୍ତୁ",
+                "addSubtitle": "ଆପଣଙ୍କ ଉତ୍ପାଦ ସୂଚନା ଭରନ୍ତୁ"
+            },
+            "basicInfo": {
+                "title": "ମୂଳ ସୂଚନା",
+                "productName": "ଉତ୍ପାଦ ନାମ",
+                "productNamePlaceholder": "ଯେପରିକି, ଜୈବିକ ଟମାଟୋ, ତାଜା ଦୁଧ, ଇତ୍ୟାଦି",
+                "description": "ବିବରଣୀ",
+                "descriptionPlaceholder": "ଆପଣଙ୍କ ଉତ୍ପାଦ ବର୍ଣ୍ଣନା କରନ୍ତୁ... (ଗୁଣ, ତାଜାପନ, ଚାଷ ପ୍ରଣାଳୀ, ଇତ୍ୟାଦି)"
+            },
+            "pricing": {
+                "title": "ମୂଲ୍ୟ ଏବଂ ଷ୍ଟକ୍",
+                "priceLabel": "ଦର (₹)",
+                "pricePlaceholder": "0.00",
+                "priceHelp": "ଗୋଟିଏ ବିକ୍ରୟ ଇକାଇର ଦର",
+                "stockLabel": "ଉପଲବ୍ଧ ଷ୍ଟକ୍",
+                "stockPlaceholder": "0"
+            },
+            "unit": {
+                "title": "ବିକ୍ରୟ ଇକାଇ",
+                "howItWorks": {
+                    "prefix": "ଏହା କିପରି କାମ କରେ:",
+                    "text": "ଆପଣ ଉତ୍ପାଦ କିପରି ବିକ୍ରୟ କରିବେ ସେଟ୍ କରନ୍ତୁ। ଉଦାହରଣ: ଯଦି ଆପଣ 1-ଲିଟର ବୋତଲରେ ଦୁଧ ବିକ୍ରୟ କରନ୍ତି, “ଲିଟର” ବାଛନ୍ତୁ ଏବଂ ଇକାଇ ଆକାରରେ “1” ଲେଖନ୍ତୁ।"
+                },
+                "typeLabel": "ଇକାଇ ପ୍ରକାର",
+                "customPlaceholder": "ଆପଣଙ୍କ ଇକାଇ ଲେଖନ୍ତୁ (ଯେପରିକି, ଝୁଡା, ବୋରୀ, ବର୍ତନ)",
+                "sizeLabel": "ଇକାଇ ଆକାର",
+                "sizePlaceholder": "ଯେପରିକି, 1, 0.5, 250",
+                "sizeHelp": "ଗୋଟିଏ ବିକ୍ରୟ ଇକାଇର ଆକାର। ଉଦାହରଣ: 0.5 ଅର୍ଥାତ ଅର୍ଧ କିଲୋ, 250 ଅର୍ଥାତ 250ml, 1 ଅର୍ଥାତ ଗୋଟିଏ ପିସ୍"
+            },
+            "discount": {
+                "title": "ଥୋକ ଛୁଟ (ଇଚ୍ଛାଧୀନ)",
+                "typeLabel": "ଛୁଟ ପ୍ରକାର",
+                "type": {
+                    "none": "କୌଣସି ଛୁଟ ନାହିଁ",
+                    "percentage": "ଶତକିଆ (%)",
+                    "flat": "ସିଧା ରାଶି (₹)"
+                },
+                "valueLabel": "ଛୁଟ ମୂଲ୍ୟ",
+                "valuePlaceholderPercent": "ଯେପରିକି, 10 ଅର୍ଥାତ 10%",
+                "valuePlaceholderFlat": "ଯେପରିକି, 50 ଅର୍ଥାତ ₹50 ଛୁଟ",
+                "minQtyLabel": "ଛୁଟ ପାଇଁ ନିମ୍ନତମ ପରିମାଣ",
+                "minQtyPlaceholder": "ଯେପରିକି, 5",
+                "minQtyHelp": "ନିମ୍ନତମ {unit} ଆବଶ୍ୟକ",
+                "minSubtotalLabel": "ଛୁଟ ପାଇଁ ନିମ୍ନତମ ଅର୍ଡର ମୂଲ୍ୟ (₹)",
+                "minSubtotalPlaceholder": "ଯେପରିକି, 500",
+                "minSubtotalHelp": "ନିମ୍ନତମ ସମୁଦାୟ ଅର୍ଡର ମୂଲ୍ୟ ଆବଶ୍ୟକ"
+            },
+            "category": {
+                "title": "ଶ୍ରେଣୀ",
+                "selectPlaceholder": "ଉତ୍ପାଦ ଶ୍ରେଣୀ ବାଛନ୍ତୁ"
+            },
+            "images": {
+                "title": "ଉତ୍ପାଦ ଚିତ୍ର (ସର୍ବାଧିକ 5)",
+                "addImage": "ଚିତ୍ର ଯୋଡନ୍ତୁ",
+                "help": "ଆପଣଙ୍କ ଉତ୍ପାଦର ସ୍ପଷ୍ଟ ଫଟୋ ବିଭିନ୍ନ ଦିଗରୁ ଯୋଡନ୍ତୁ"
+            },
+            "form": {
+                "cancel": "ବାତିଲ କରନ୍ତୁ",
+                "uploading": "ଅପଲୋଡ୍ ହେଉଛି...",
+                "updating": "ଅଦ୍ୟତନ ହେଉଛି...",
+                "add": "ଉତ୍ପାଦ ଯୋଡନ୍ତୁ",
+                "update": "ଉତ୍ପାଦ ଅଦ୍ୟତନ କରନ୍ତୁ"
+            },
+            "delete": {
+                "title": "ଉତ୍ପାଦ ହଟାନ୍ତୁ",
+                "prompt": "ଆପଣ “{title}” ହଟାଇବାକୁ ନିଶ୍ଚିତ କି? ଏହି କାର୍ଯ୍ୟ ପୁନଃସ୍ଥାପନ ହେବ ନାହିଁ।",
+                "cancel": "ବାତିଲ କରନ୍ତୁ",
+                "deleting": "ହଟାଯାଉଛି...",
+                "confirm": "ଉତ୍ପାଦ ହଟାନ୍ତୁ"
+            }
+        }
+    }
+}

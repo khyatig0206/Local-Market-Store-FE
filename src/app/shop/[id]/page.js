@@ -8,7 +8,7 @@ import { FaStar, FaRegStar, FaUserCircle, FaPlus, FaShoppingCart, FaLeaf, FaTruc
 import { toast } from 'react-toastify';
 import {useTranslations} from 'next-intl';
 import CheckoutModal from "@/components/CheckoutModal";
-import { placeDirectOrder, verifyPayment } from "@/lib/api/orders";
+import { placeDirectOrder, initiateDirectPayment, verifyDirectPayment } from "@/lib/api/orders";
 import { addReview, getProductReviews } from "@/lib/api/reviews";
 
 function loadRazorpay() {
@@ -752,42 +752,44 @@ export default function ProductDetailsPage() {
             total={Number(totalPrice() || 0)}
             onConfirm={async ({ addressId, paymentMethod }) => {
               try {
-                // Fetch the selected address details for Razorpay prefill
-                const { getAddressById } = await import('@/lib/api/addresses');
-                let selectedAddress = null;
-                try {
-                  selectedAddress = await getAddressById(addressId);
-                } catch (e) {
-                  console.warn('Could not fetch address details:', e.message);
-                }
- 
-                const res = await placeDirectOrder(product.id, quantity, {
-                  addressId,
-                  paymentMethod
-                });
- 
-                if (paymentMethod === 'PREPAID' && res?.razorpayOrderId && res?.keyId) {
+                if (paymentMethod === 'PREPAID') {
+                  // Step 1: Initiate payment to get Razorpay order
+                  const paymentRes = await initiateDirectPayment(product.id, quantity);
+
                   const loaded = await loadRazorpay();
                   if (!loaded || !window.Razorpay) {
                     toast.error('Payment gateway failed to load');
                     setBuyNowOpen(false);
                     return;
                   }
+
+                  // Fetch address for prefill
+                  const { getAddressById } = await import('@/lib/api/addresses');
+                  let selectedAddress = null;
+                  try {
+                    selectedAddress = await getAddressById(addressId);
+                  } catch (e) {
+                    console.warn('Could not fetch address details:', e.message);
+                  }
+
                   const options = {
-                    key: res.keyId,
-                    amount: res.amount,
-                    currency: res.currency || 'INR',
+                    key: paymentRes.keyId,
+                    amount: paymentRes.amount,
+                    currency: paymentRes.currency || 'INR',
                     name: 'Marketplace',
-                    description: `Order #${res.orderId}`,
-                    order_id: res.razorpayOrderId,
+                    description: product.title,
+                    order_id: paymentRes.razorpayOrderId,
                     prefill: selectedAddress ? {
                       name: selectedAddress.contactName,
                       contact: selectedAddress.contactPhone
                     } : {},
                     handler: async function (response) {
                       try {
-                        await verifyPayment({
-                          orderId: res.orderId,
+                        // Step 2: Verify payment and create order
+                        await verifyDirectPayment({
+                          productId: product.id,
+                          quantity,
+                          addressId,
                           razorpay_order_id: response.razorpay_order_id,
                           razorpay_payment_id: response.razorpay_payment_id,
                           razorpay_signature: response.razorpay_signature
@@ -813,6 +815,12 @@ export default function ProductDetailsPage() {
                   return;
                 }
 
+                // COD flow - place order directly
+                await placeDirectOrder(product.id, quantity, {
+                  addressId,
+                  paymentMethod: 'COD'
+                });
+
                 toast.success('Order placed successfully!');
                 router.replace('/orders');
               } catch (e) {
@@ -822,7 +830,9 @@ export default function ProductDetailsPage() {
                 }
                 toast.error('Failed to place order');
               } finally {
-                setBuyNowOpen(false);
+                if (paymentMethod !== 'PREPAID') {
+                  setBuyNowOpen(false);
+                }
               }
             }}
           />

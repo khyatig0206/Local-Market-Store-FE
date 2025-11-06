@@ -198,17 +198,6 @@ useEffect(() => {
         </div>
       )}
 
-      {/* Mobile Menu Button */}
-      {!isAuthPage && !isWaitingPage && (
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden fixed top-4 left-4 z-50 bg-green-600 text-white p-3 rounded-xl shadow-lg hover:bg-green-700 transition-colors"
-          aria-label="Toggle menu"
-        >
-          {mobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
-        </button>
-      )}
-
       {/* Mobile Sidebar Overlay */}
       {!isAuthPage && !isWaitingPage && mobileMenuOpen && (
         <div
@@ -220,12 +209,23 @@ useEffect(() => {
       {/* Mobile Sidebar */}
       {!isAuthPage && !isWaitingPage && (
         <div
-          className={`md:hidden fixed top-0 left-0 h-full z-40 transform transition-transform duration-300 ease-in-out ${
+          className={`md:hidden fixed top-0 left-0 h-full z-50 transform transition-transform duration-300 ease-in-out ${
             mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
         >
           <ProducerSidebar />
         </div>
+      )}
+
+      {/* Mobile Menu Button */}
+      {!isAuthPage && !isWaitingPage && (
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="md:hidden fixed top-4 right-4 z-[60] bg-green-600 text-white p-3 rounded-xl shadow-lg hover:bg-green-700 transition-colors"
+          aria-label="Toggle menu"
+        >
+          {mobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+        </button>
       )}
 
       <main className={`flex-1 ${isWaitingPage ? 'p-0 overflow-hidden h-full' : 'p-4 md:p-8 overflow-x-hidden overflow-y-auto h-screen pt-20 md:pt-8'}`}>{children}</main>

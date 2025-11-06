@@ -41,7 +41,7 @@ export default function AdminSidebar() {
   };
 
   return (
-    <aside className="w-64 h-screen bg-white shadow-lg border-r p-6 hidden md:flex flex-col justify-between">
+    <aside className="w-64 h-screen bg-white shadow-lg border-r p-6 flex flex-col justify-between overflow-y-auto">
       <div>
         <div
           className="flex items-center gap-3 mb-8 cursor-pointer group"
@@ -50,32 +50,32 @@ export default function AdminSidebar() {
           role="button"
           aria-label="Go to Admin Home"
         >
-          <FaUserCircle className="text-3xl text-green-700 group-hover:text-green-800 transition" />
+          <FaUserCircle className="text-3xl text-blue-700 group-hover:text-blue-800 transition" />
           <div>
-            <div className="text-lg font-bold text-green-700 group-hover:text-green-800 transition">
+            <div className="text-lg font-bold text-blue-700 group-hover:text-blue-800 transition">
               {adminName}
             </div>
-            <div className="text-sm text-gray-500 group-hover:text-green-700 transition">Admin Dashboard</div>
+            <div className="text-sm text-gray-500 group-hover:text-blue-700 transition">Admin Dashboard</div>
           </div>
         </div>
 
         <nav className="flex flex-col gap-4 text-gray-700">
-          <Link href="/admin/user-verification" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/admin/user-verification" prefetch className="flex items-center gap-2 hover:text-blue-700 transition-colors">
             <FaUserShield /> User Verification
           </Link>
-          <Link href="/admin/manage-categories" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/admin/manage-categories" prefetch className="flex items-center gap-2 hover:text-blue-700 transition-colors">
             <FaFolderOpen /> Manage Categories
           </Link>
-          <Link href="/admin/order-monitoring" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/admin/order-monitoring" prefetch className="flex items-center gap-2 hover:text-blue-700 transition-colors">
             <FaClipboardCheck /> Order Monitoring
           </Link>
-          <Link href="/admin/disputes" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/admin/disputes" prefetch className="flex items-center gap-2 hover:text-blue-700 transition-colors">
             <FaBalanceScale /> Dispute Resolution
           </Link>
-          <Link href="/admin/fee-management" prefetch={false} className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/admin/fee-management" prefetch={false} className="flex items-center gap-2 hover:text-blue-700 transition-colors">
             <FaMoneyBillWave /> Fee Management
           </Link>
-          <Link href="/admin/delivery-dashboard" prefetch={false} className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/admin/delivery-dashboard" prefetch={false} className="flex items-center gap-2 hover:text-blue-700 transition-colors">
             <FaTruckMoving /> Delivery Dashboard
           </Link>
           
@@ -84,7 +84,7 @@ export default function AdminSidebar() {
 
       <button
         onClick={handleLogout}
-        className="mt-8 flex items-center gap-2 text-red-600 hover:text-red-800 text-sm"
+        className="mt-8 flex items-center gap-2 text-red-600 hover:text-red-800 text-sm transition-colors"
       >
         <FaSignOutAlt /> Logout
       </button>

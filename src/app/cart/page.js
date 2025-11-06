@@ -406,21 +406,11 @@ export default function CartPage() {
           total={Number(total || 0)}
           onConfirm={async ({ addressId, paymentMethod }) => {
             try {
-              // Fetch the selected address details for Razorpay prefill
-              const { getAddressById } = await import('@/lib/api/addresses');
-              let selectedAddress = null;
-              try {
-                selectedAddress = await getAddressById(addressId);
-              } catch (e) {
-                console.warn('Could not fetch address details:', e.message);
-              }
+              if (paymentMethod === 'PREPAID') {
+                // Step 1: Initiate payment to get Razorpay order
+                const { initiatePayment } = await import('@/lib/api/orders');
+                const paymentRes = await initiatePayment();
 
-              const res = await placeOrder({
-                addressId,
-                paymentMethod
-              });
-
-              if (paymentMethod === 'PREPAID' && res?.razorpayOrderId && res?.keyId) {
                 const loaded = await loadRazorpay();
                 if (!loaded || !window.Razorpay) {
                   toast.error(t('cartPage.paymentGatewayFailed'));
@@ -428,21 +418,31 @@ export default function CartPage() {
                   return;
                 }
 
+                // Fetch address for prefill
+                const { getAddressById } = await import('@/lib/api/addresses');
+                let selectedAddress = null;
+                try {
+                  selectedAddress = await getAddressById(addressId);
+                } catch (e) {
+                  console.warn('Could not fetch address details:', e.message);
+                }
+
                 const options = {
-                  key: res.keyId,
-                  amount: res.amount,
-                  currency: res.currency || 'INR',
+                  key: paymentRes.keyId,
+                  amount: paymentRes.amount,
+                  currency: paymentRes.currency || 'INR',
                   name: 'Marketplace',
-                  description: `Order #${res.orderId}`,
-                  order_id: res.razorpayOrderId,
+                  description: 'Cart Order',
+                  order_id: paymentRes.razorpayOrderId,
                   prefill: selectedAddress ? {
                     name: selectedAddress.contactName,
                     contact: selectedAddress.contactPhone
                   } : {},
                   handler: async function (response) {
                     try {
+                      // Step 2: Verify payment and create order
                       await verifyPayment({
-                        orderId: res.orderId,
+                        addressId,
                         razorpay_order_id: response.razorpay_order_id,
                         razorpay_payment_id: response.razorpay_payment_id,
                         razorpay_signature: response.razorpay_signature
@@ -472,7 +472,12 @@ export default function CartPage() {
                 return;
               }
 
-              // COD flow
+              // COD flow - place order directly
+              const res = await placeOrder({
+                addressId,
+                paymentMethod: 'COD'
+              });
+
               setCartItems([]);
               try { localStorage.setItem('cartCount', '0'); } catch {}
               try { window.dispatchEvent(new Event('cartCountUpdate')); } catch {}
@@ -485,7 +490,9 @@ export default function CartPage() {
               }
               toast.error(t('cartPage.orderFailed'));
             } finally {
-              setCheckoutOpen(false);
+              if (paymentMethod !== 'PREPAID') {
+                setCheckoutOpen(false);
+              }
             }
           }}
         />

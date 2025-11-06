@@ -262,6 +262,65 @@ export async function updateOrderItemStatusProducer(itemId, status) {
   }
   return await res.json();
 }
+export async function initiatePayment() {
+  const token = userToken();
+  if (!token) {
+    const err = new Error('Unauthorized');
+    err.status = 401;
+    err.code = 'UNAUTHORIZED';
+    throw err;
+  }
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/orders/initiate-payment`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    }
+  });
+  if (res.status === 401) {
+    const err = new Error('Unauthorized');
+    err.status = 401;
+    err.code = 'UNAUTHORIZED';
+    throw err;
+  }
+  if (!res.ok) {
+    const err = new Error('Failed to initiate payment');
+    err.status = res.status;
+    throw err;
+  }
+  return await res.json();
+}
+
+export async function initiateDirectPayment(productId, quantity) {
+  const token = userToken();
+  if (!token) {
+    const err = new Error('Unauthorized');
+    err.status = 401;
+    err.code = 'UNAUTHORIZED';
+    throw err;
+  }
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/orders/initiate-direct-payment`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    },
+    body: JSON.stringify({ productId, quantity })
+  });
+  if (res.status === 401) {
+    const err = new Error('Unauthorized');
+    err.status = 401;
+    err.code = 'UNAUTHORIZED';
+    throw err;
+  }
+  if (!res.ok) {
+    const err = new Error('Failed to initiate direct payment');
+    err.status = res.status;
+    throw err;
+  }
+  return await res.json();
+}
+
 export async function verifyPayment(payload) {
   const token = (typeof window !== 'undefined') ? localStorage.getItem('userToken') : null;
   if (!token) {
@@ -286,6 +345,36 @@ export async function verifyPayment(payload) {
   }
   if (!res.ok) {
     const err = new Error('Failed to verify payment');
+    err.status = res.status;
+    throw err;
+  }
+  return await res.json();
+}
+
+export async function verifyDirectPayment(payload) {
+  const token = userToken();
+  if (!token) {
+    const err = new Error('Unauthorized');
+    err.status = 401;
+    err.code = 'UNAUTHORIZED';
+    throw err;
+  }
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/orders/verify-direct`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    },
+    body: JSON.stringify(payload)
+  });
+  if (res.status === 401) {
+    const err = new Error('Unauthorized');
+    err.status = 401;
+    err.code = 'UNAUTHORIZED';
+    throw err;
+  }
+  if (!res.ok) {
+    const err = new Error('Failed to verify direct payment');
     err.status = res.status;
     throw err;
   }

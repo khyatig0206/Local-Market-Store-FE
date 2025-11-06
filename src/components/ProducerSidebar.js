@@ -66,7 +66,7 @@ export default function ProducerSidebar() {
   };
 
   return (
-    <aside className="w-56 bg-white shadow-lg border-r p-6 hidden md:flex flex-col h-screen">
+    <aside className="w-56 bg-white shadow-lg border-r p-6 flex flex-col h-screen overflow-y-auto">
       <div>
         <div className="flex items-center gap-3 mb-2">
           {producer.businessLogo ? (
@@ -89,59 +89,57 @@ export default function ProducerSidebar() {
             <div className="text-sm text-gray-500">Dashboard</div>
           </div>
         </div>
-        <div className="flex-1" />
+        
         {/* Language selector */}
-      <div className="mb-6">
-        <select
-          aria-label="Language"
-          className="w-full border border-green-600 text-green-700 rounded px-2 py-1 text-xs bg-white"
-          value={localeUI}
-          onChange={(e) => {
-            const l = e.target.value;
-            setLocaleUI(l);
-            try { document.cookie = `locale=${l}; path=/; max-age=31536000`; } catch {}
-            try { localStorage.setItem('locale', l); } catch {}
-            window.location.reload();
-          }}
-        >
-          <option value="en">EN</option>
-          <option value="hi">हिं</option>
-          <option value="or">ଓଡ଼ିଆ</option>
-        </select>
-      </div>
+        <div className="mb-6">
+          <select
+            aria-label="Language"
+            className="w-full border border-green-600 text-green-700 rounded px-2 py-1 text-xs bg-white"
+            value={localeUI}
+            onChange={(e) => {
+              const l = e.target.value;
+              setLocaleUI(l);
+              try { document.cookie = `locale=${l}; path=/; max-age=31536000`; } catch {}
+              try { localStorage.setItem('locale', l); } catch {}
+              window.location.reload();
+            }}
+          >
+            <option value="en">EN</option>
+            <option value="hi">हिं</option>
+            <option value="or">ଓଡ଼ିଆ</option>
+          </select>
+        </div>
 
         <nav className="flex flex-col gap-4 text-gray-700">
-          <Link href="/producer" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/producer" prefetch className="flex items-center gap-2 hover:text-green-700 transition-colors">
             <FaUserCircle /> Business Profile
           </Link>
-          <Link href="/producer/kyc" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/producer/kyc" prefetch className="flex items-center gap-2 hover:text-green-700 transition-colors">
             <FaFileUpload /> KYC & Documents
           </Link>
-          <Link href="/producer/products" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/producer/products" prefetch className="flex items-center gap-2 hover:text-green-700 transition-colors">
             <FaBoxOpen /> Product Listings
           </Link>
-          <Link href="/producer/orders" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/producer/orders" prefetch className="flex items-center gap-2 hover:text-green-700 transition-colors">
             <FaClipboardList /> Orders
           </Link>
-          <Link href="/producer/payouts" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/producer/payouts" prefetch className="flex items-center gap-2 hover:text-green-700 transition-colors">
             <FaMoneyCheckAlt /> Payouts
           </Link>
-          <Link href="/producer/analytics" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/producer/analytics" prefetch className="flex items-center gap-2 hover:text-green-700 transition-colors">
             <FaChartBar /> Sales Analytics
           </Link>
-          <Link href="/producer/disputes" prefetch className="flex items-center gap-2 hover:text-green-700">
+          <Link href="/producer/disputes" prefetch className="flex items-center gap-2 hover:text-green-700 transition-colors">
             <FaBalanceScale /> Disputes
           </Link>
         </nav>
       </div>
 
-      
       <div className="flex-1" />
-
 
       <button
         onClick={handleLogout}
-        className="mb-2 flex items-center gap-2 text-red-600 hover:text-red-800 text-sm"
+        className="mb-2 flex items-center gap-2 text-red-600 hover:text-red-800 text-sm transition-colors"
       >
         <FaSignOutAlt /> Logout
       </button>

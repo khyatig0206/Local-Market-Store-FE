@@ -59,17 +59,6 @@ export default function AdminLayout({ children }) {
         </div>
       )}
 
-      {/* Mobile Menu Button */}
-      {!isAuthPage && (
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden fixed top-4 left-4 z-50 bg-blue-600 text-white p-3 rounded-xl shadow-lg hover:bg-blue-700 transition-colors"
-          aria-label="Toggle menu"
-        >
-          {mobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
-        </button>
-      )}
-
       {/* Mobile Sidebar Overlay */}
       {!isAuthPage && mobileMenuOpen && (
         <div
@@ -81,12 +70,23 @@ export default function AdminLayout({ children }) {
       {/* Mobile Sidebar */}
       {!isAuthPage && (
         <div
-          className={`md:hidden fixed top-0 left-0 h-full z-40 transform transition-transform duration-300 ease-in-out ${
+          className={`md:hidden fixed top-0 left-0 h-full z-50 transform transition-transform duration-300 ease-in-out ${
             mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
         >
           <AdminSidebar />
         </div>
+      )}
+
+      {/* Mobile Menu Button */}
+      {!isAuthPage && (
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="md:hidden fixed top-4 right-4 z-[60] bg-blue-600 text-white p-3 rounded-xl shadow-lg hover:bg-blue-700 transition-colors"
+          aria-label="Toggle menu"
+        >
+          {mobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+        </button>
       )}
 
       <main className="flex-1 p-4 md:p-8 overflow-x-hidden overflow-y-auto h-screen pt-20 md:pt-8">{children}</main>

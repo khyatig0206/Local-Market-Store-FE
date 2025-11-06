@@ -5,6 +5,15 @@
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.13-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0cd86962-288a-4f21-8baa-9c0219c9176a" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/9b302ec8-0bac-4776-8d81-243abc80d677" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ec5a5084-1dfe-485a-98c3-ef1a5c9295b4" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2c9c4fec-8fa0-4b68-addb-c15d9d32c27e" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c54d640f-4bab-45a4-b05b-7a4ef20327ad" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f2460f8b-1c2e-4f29-886a-f1b912309596" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0751e504-35f4-482c-9e12-8c0aecae771e" />
+
+
 A modern, responsive React frontend for the Pallihaat digital marketplace, built with Next.js 14 and featuring multi-language support, real-time search, interactive maps, and a comprehensive producer dashboard.
 
 ## 🎨 Design System

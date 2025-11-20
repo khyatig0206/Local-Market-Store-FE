@@ -47,26 +47,26 @@ export default function HomeCategoryProducts() {
   if (!catProducts.length) return null;
 
   return (
-    <section className="px-4 mt-8">
+    <section className="px-3 sm:px-4 mt-6 sm:mt-8">
       {catProducts.map(({ category: cat, products }) => (
         <div key={cat.id} id={cat.name.toLowerCase().replace(/ /g, '-')} className="mb-16">
-          
+
           {/* Category Header */}
-          <div className="flex justify-between items-center mb-8">
+          <div className="flex justify-between items-center mb-4 sm:mb-8">
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl sm:rounded-2xl flex items-center justify-center">
                 <span className="text-white font-bold text-lg">
                   {cat.name.charAt(0)}
                 </span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-gray-900">{cat.name}</h2>
-                <p className="text-gray-600">{t('home.categoryProducts.freshFromFarms')}</p>
+                <h2 className="text-lg sm:text-2xl font-bold text-gray-900">{cat.name}</h2>
+                <p className="text-xs sm:text-sm text-gray-600">{t('home.categoryProducts.freshFromFarms')}</p>
               </div>
             </div>
             <Link 
               href={`/shop?category=${cat.id}`} 
-              className="group flex items-center space-x-2 text-green-600 hover:text-green-700 font-semibold transition-colors duration-200"
+              className="group flex items-center space-x-2 text-green-600 hover:text-green-700 font-semibold transition-colors duration-200 text-sm"
             >
               <span>{t('nav.viewAll')}</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,6 @@ export default function HomeCategoryProducts() {
                 {/* Product Image */}
                 <Link href={`/shop/${prod.id}`} className="block">
                   <div className="relative overflow-hidden h-40 sm:h-48 md:h-56">
-
                     {prod.images && prod.images[0] ? (
                       <Image
                         src={prod.images[0]}
@@ -108,7 +107,7 @@ export default function HomeCategoryProducts() {
                       </div>
                     )}
 
-                    {/* Stock Badge */}
+                    {/* Out of Stock */}
                     {Number(prod.inventory) <= 0 && (
                       <div className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm bg-red-500 text-white">
                         {t('common.outOfStock')}
@@ -137,12 +136,12 @@ export default function HomeCategoryProducts() {
                 {/* Product Info */}
                 <div className="p-3 sm:p-4">
                   <Link href={`/shop/${prod.id}`}>
-                    <h3 className="font-semibold text-gray-800 mb-1.5 line-clamp-1 group-hover:text-green-600 transition-colors duration-200">
+                    <h3 className="font-semibold text-gray-800 text-sm sm:text-base mb-1 sm:mb-1.5 line-clamp-1 group-hover:text-green-600 transition-colors duration-200">
                       {prod.title}
                     </h3>
                   </Link>
                   
-                  <div className="flex items-center justify-between text-xs mb-1.5">
+                  <div className="flex items-center justify-between text-xs mb-1 sm:mb-1.5">
                     <div className="flex-1">
                       {prod.Producer?.businessName && (
                         <p className="text-gray-500 line-clamp-1">
@@ -158,9 +157,10 @@ export default function HomeCategoryProducts() {
                         }`}>
                           <FaMapMarkerAlt className="text-xs" />
                           {prod.distance < 1 
-                            ? `${(prod.distance * 1000).toFixed(0)}m away`
-                            : `${prod.distance.toFixed(1)}km away`
+                            ? `${(prod.distance * 1000).toFixed(0)}m`
+                            : `${prod.distance.toFixed(1)}km`
                           }
+                          <span className="hidden sm:inline">away</span>
                         </p>
                       )}
                     </div>
@@ -176,14 +176,45 @@ export default function HomeCategoryProducts() {
                     )}
                   </div>
 
+                  {/* Price + Mobile Add to Cart */}
                   <div className="flex items-end justify-between mb-1 sm:mb-1.5">
                     <div className="flex flex-col">
-                      <span className="text-green-600 font-bold text-lg">₹{Number(prod.price||0).toFixed(2)}</span>
-                      <span className="text-[10px] text-gray-500">{t('shop.per')} {prod.unitSize || 1} {prod.unitLabel || 'unit'}</span>
+                      <span className="text-green-600 font-bold text-base sm:text-lg">₹{Number(prod.price||0).toFixed(2)}</span>
+                      <span className="text-[10px] sm:text-[11px] text-gray-500">{t('shop.per')} {prod.unitSize || 1} {prod.unitLabel || 'unit'}</span>
                     </div>
+
+                    {/* Mobile Add to Cart */}
+                    <button
+                      className={`${Number(prod.inventory) <= 0 ? 'sm:hidden px-2.5 py-2 rounded-lg bg-gray-200 text-gray-400 cursor-not-allowed' : 'sm:hidden px-2.5 py-2 rounded-lg bg-green-600 hover:bg-green-700 text-white transition-colors duration-200'}`}
+                      title={Number(prod.inventory) <= 0 ? t('common.outOfStock') : t('common.addToCart')}
+                      disabled={Number(prod.inventory) <= 0}
+                      onClick={async (e) => {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        if (Number(prod.inventory) <= 0) return;
+                        const { addToCart } = await import('@/lib/api/cart');
+                        try {
+                          await addToCart(prod.id, 1);
+                          try {
+                            const { getCart } = await import('@/lib/api/cart');
+                            const cart = await getCart();
+                            const count = Array.isArray(cart?.CartItems) ? cart.CartItems.length : 0;
+                            localStorage.setItem('cartCount', String(count));
+                            window.dispatchEvent(new Event('cartCountUpdate'));
+                            toast.success('Added to cart!');
+                          } catch {}
+                        } catch (e) {
+                          if (e?.status === 401 || e?.code === 'UNAUTHORIZED') return;
+                          toast.error(t('common.addToCartFailed'));
+                        }
+                      }}
+                    >
+                      <FaCartPlus />
+                    </button>
                   </div>
 
-                  <div className="flex items-center justify-between">
+                  {/* Desktop Buttons */}
+                  <div className="hidden sm:flex items-center justify-between">
                     <Link href={`/shop/${prod.id}`} className="text-sm text-blue-600 hover:underline">
                       {t('shop.viewDetails')}
                     </Link>

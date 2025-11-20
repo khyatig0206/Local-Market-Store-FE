@@ -50,7 +50,8 @@ export default function HomeCategoryProducts() {
     <section className="px-4 mt-8">
       {catProducts.map(({ category: cat, products }) => (
         <div key={cat.id} id={cat.name.toLowerCase().replace(/ /g, '-')} className="mb-16">
-          {/* Enhanced Category Header */}
+          
+          {/* Category Header */}
           <div className="flex justify-between items-center mb-8">
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center">
@@ -74,16 +75,18 @@ export default function HomeCategoryProducts() {
             </Link>
           </div>
 
-          {/* Enhanced Products Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr">
+          {/* Products Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 auto-rows-fr">
             {products.map((prod, index) => (
               <div 
                 key={prod.id} 
-                className="group relative bg-white rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-200 border border-gray-100 overflow-hidden"
+                className={`group relative bg-white rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-200 border border-gray-100 overflow-hidden ${index >= 2 ? 'hidden sm:block' : ''}`}
               >
-                {/* Product Image Container */}
+
+                {/* Product Image */}
                 <Link href={`/shop/${prod.id}`} className="block">
-                  <div className="relative overflow-hidden h-56">
+                  <div className="relative overflow-hidden h-40 sm:h-48 md:h-56">
+
                     {prod.images && prod.images[0] ? (
                       <Image
                         src={prod.images[0]}
@@ -105,14 +108,14 @@ export default function HomeCategoryProducts() {
                       </div>
                     )}
 
-                  {/* Stock Badge */}
-                  {Number(prod.inventory) <= 0 && (
-                    <div className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm bg-red-500 text-white">
-                      {t('common.outOfStock')}
-                    </div>
-                  )}
+                    {/* Stock Badge */}
+                    {Number(prod.inventory) <= 0 && (
+                      <div className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm bg-red-500 text-white">
+                        {t('common.outOfStock')}
+                      </div>
+                    )}
 
-                    {/* Discount Badge */}
+                    {/* Discount */}
                     {String(prod.discountType) !== 'none' && (
                       <div className="absolute bottom-3 left-3 bg-red-500 text-white px-2 py-1 rounded-lg text-xs font-bold">
                         {prod.discountType === 'percentage' ? `${prod.discountValue}% OFF` : 'SALE'}
@@ -132,7 +135,7 @@ export default function HomeCategoryProducts() {
                 </Link>
 
                 {/* Product Info */}
-                <div className="p-3">
+                <div className="p-3 sm:p-4">
                   <Link href={`/shop/${prod.id}`}>
                     <h3 className="font-semibold text-gray-800 mb-1.5 line-clamp-1 group-hover:text-green-600 transition-colors duration-200">
                       {prod.title}
@@ -146,6 +149,7 @@ export default function HomeCategoryProducts() {
                           {t('home.categoryProducts.byProducer')} {prod.Producer.businessName}
                         </p>
                       )}
+
                       {prod.distance !== undefined && prod.distance !== null && (
                         <p className={`font-medium flex items-center gap-1 mt-0.5 ${
                           prod.rangeKm && prod.distance > prod.rangeKm 
@@ -160,6 +164,7 @@ export default function HomeCategoryProducts() {
                         </p>
                       )}
                     </div>
+
                     {Number(prod.averageRating || 0) > 0 && (
                       <div className="flex items-center gap-1">
                         <svg className="w-3.5 h-3.5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -171,7 +176,7 @@ export default function HomeCategoryProducts() {
                     )}
                   </div>
 
-                  <div className="flex items-end justify-between mb-1.5">
+                  <div className="flex items-end justify-between mb-1 sm:mb-1.5">
                     <div className="flex flex-col">
                       <span className="text-green-600 font-bold text-lg">₹{Number(prod.price||0).toFixed(2)}</span>
                       <span className="text-[10px] text-gray-500">{t('shop.per')} {prod.unitSize || 1} {prod.unitLabel || 'unit'}</span>
@@ -210,10 +215,13 @@ export default function HomeCategoryProducts() {
                       <FaCartPlus />
                     </button>
                   </div>
+
                 </div>
+
               </div>
             ))}
           </div>
+
         </div>
       ))}
     </section>

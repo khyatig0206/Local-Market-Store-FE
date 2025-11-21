@@ -176,48 +176,12 @@ export default function HomeCategoryProducts() {
                     )}
                   </div>
 
-                  {/* Price + Mobile Add to Cart */}
                   <div className="flex items-end justify-between mb-1 sm:mb-1.5">
                     <div className="flex flex-col">
                       <span className="text-green-600 font-bold text-base sm:text-lg">₹{Number(prod.price||0).toFixed(2)}</span>
                       <span className="text-[10px] sm:text-[11px] text-gray-500">{t('shop.per')} {prod.unitSize || 1} {prod.unitLabel || 'unit'}</span>
                     </div>
 
-                    {/* Mobile Add to Cart */}
-                    <button
-                      className={`${Number(prod.inventory) <= 0 ? 'sm:hidden px-2.5 py-2 rounded-lg bg-gray-200 text-gray-400 cursor-not-allowed' : 'sm:hidden px-2.5 py-2 rounded-lg bg-green-600 hover:bg-green-700 text-white transition-colors duration-200'}`}
-                      title={Number(prod.inventory) <= 0 ? t('common.outOfStock') : t('common.addToCart')}
-                      disabled={Number(prod.inventory) <= 0}
-                      onClick={async (e) => {
-                        e.stopPropagation();
-                        e.preventDefault();
-                        if (Number(prod.inventory) <= 0) return;
-                        const { addToCart } = await import('@/lib/api/cart');
-                        try {
-                          await addToCart(prod.id, 1);
-                          try {
-                            const { getCart } = await import('@/lib/api/cart');
-                            const cart = await getCart();
-                            const count = Array.isArray(cart?.CartItems) ? cart.CartItems.length : 0;
-                            localStorage.setItem('cartCount', String(count));
-                            window.dispatchEvent(new Event('cartCountUpdate'));
-                            toast.success('Added to cart!');
-                          } catch {}
-                        } catch (e) {
-                          if (e?.status === 401 || e?.code === 'UNAUTHORIZED') return;
-                          toast.error(t('common.addToCartFailed'));
-                        }
-                      }}
-                    >
-                      <FaCartPlus />
-                    </button>
-                  </div>
-
-                  {/* Desktop Buttons */}
-                  <div className="hidden sm:flex items-center justify-between">
-                    <Link href={`/shop/${prod.id}`} className="text-sm text-blue-600 hover:underline">
-                      {t('shop.viewDetails')}
-                    </Link>
                     <button
                       className={`${Number(prod.inventory) <= 0 ? 'px-3 py-2 rounded-lg bg-gray-200 text-gray-400 cursor-not-allowed' : 'px-3 py-2 rounded-lg bg-green-600 hover:bg-green-700 text-white transition-colors duration-200'}`}
                       title={Number(prod.inventory) <= 0 ? t('common.outOfStock') : t('common.addToCart')}
@@ -243,7 +207,7 @@ export default function HomeCategoryProducts() {
                         }
                       }}
                     >
-                      <FaCartPlus />
+                      <FaCartPlus className="text-base lg:text-xl" />
                     </button>
                   </div>
 

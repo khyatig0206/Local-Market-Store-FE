@@ -82,7 +82,7 @@ export default function HomeBestSellers() {
             {items.map((prod, index) => (
               <div 
                 key={prod.id} 
-                className="group relative bg-white rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-200 border border-gray-100 overflow-hidden"
+                className={`group relative bg-white rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-200 border border-gray-100 overflow-hidden ${index >= 4 ? 'hidden sm:block' : ''}`}
               >
                 {/* Best Seller Badge */}
                 {index < 3 && (
@@ -178,12 +178,7 @@ export default function HomeBestSellers() {
                       <span className="text-green-600 font-bold text-lg">₹{Number(prod.price||0).toFixed(2)}</span>
                       <span className="text-[10px] text-gray-500">{t('shop.per')} {prod.unitSize || 1} {prod.unitLabel || 'unit'}</span>
                     </div>
-                  </div>
-
-                  <div className="flex items-center justify-between">
-                    <Link href={`/shop/${prod.id}`} className="text-sm text-blue-600 hover:underline">
-                      {t('shop.viewDetails')}
-                    </Link>
+                    
                     <button
                       className={`${Number(prod.inventory) <= 0 ? 'px-3 py-2 rounded-lg bg-gray-200 text-gray-400 cursor-not-allowed' : 'px-3 py-2 rounded-lg bg-green-600 hover:bg-green-700 text-white transition-colors duration-200'}`}
                       title={Number(prod.inventory) <= 0 ? t('common.outOfStock') : t('common.addToCart')}
@@ -202,7 +197,7 @@ export default function HomeBestSellers() {
                         }
                       }}
                     >
-                      <FaCartPlus />
+                      <FaCartPlus className="text-base lg:text-xl" />
                     </button>
                   </div>
                 </div>

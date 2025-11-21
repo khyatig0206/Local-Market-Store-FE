@@ -39,7 +39,6 @@ export default function HomeCategoryProducts() {
     <div className="flex justify-center py-20">
       <div className="flex flex-col items-center space-y-4">
         <Loader size={12} />
-        <p className="text-gray-600">Loading fresh products...</p>
       </div>
     </div>
   );

@@ -468,6 +468,13 @@ export default function ProductDetailsPage() {
                         disabled={outOfStock}
                         onClick={() => {
                           if (outOfStock) return;
+                          
+                          const token = localStorage.getItem('userToken');
+                          if (!token) {
+                            router.push('/signin');
+                            return;
+                          }
+
                           const max = Number(product?.inventory || 0);
                           if (quantity > max) {
                             toast.error(`Only ${max} in stock`);

@@ -78,14 +78,14 @@ export default function CategoriesCarousel({ categories = [] }) {
           {displayCategories.map((cat, idx) => (
             <div
               key={`${cat.id}-${idx}`}
-              className="pl-1 flex-[0_0_calc(100%/3)] sm:flex-[0_0_calc(100%/6)] min-w-0"
+              className="pl-1 flex-[0_0_50%] sm:flex-[0_0_calc(100%/6)] min-w-0"
             >
               <Link
                 href={`/shop?category=${cat.id}`}
                 className="w-[92%] sm:w-[85%] mx-auto flex flex-col items-center bg-white rounded-xl shadow p-4 h-40 sm:h-44 justify-between border border-gray-100 hover:shadow-lg cursor-pointer transition-shadow duration-200"
                 title={`View all ${cat.name}`}
               >
-                <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center mb-2 shadow-inner">
+                <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center mb-2 shadow-inner">
                   <Image
                     src={cat.photo}
                     alt={cat.name}
@@ -98,7 +98,10 @@ export default function CategoriesCarousel({ categories = [] }) {
                   <div className="text-sm sm:text-base font-semibold text-gray-800 mb-1 truncate">
                     {cat.name}
                   </div>
-                  <div className="text-xs sm:text-sm text-green-600 font-medium">Shop Now →</div>
+                  <div className="text-xs sm:text-sm text-green-600 font-medium">
+                    <span className="sm:hidden">Shop →</span>
+                    <span className="hidden sm:inline">Shop Now →</span>
+                  </div>
                 </div>
               </Link>
             </div>

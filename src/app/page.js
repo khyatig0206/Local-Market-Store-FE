@@ -19,7 +19,7 @@ export default function Home() {
 </section>
 
                 {/* Main Content */}
-                <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-4">
+                <div className="max-w-7xl mx-auto px-2 sm:px-2 lg:px-4">
                     {/* Categories Section */}
                     <section className="py-12">
                         <div className="text-center mb-10">

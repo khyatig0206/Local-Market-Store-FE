@@ -288,11 +288,12 @@ export default function Navbar() {
     }`}>
       {/* Top Announcement Bar */}
       <div
-        className={`bg-gradient-to-r from-green-600 to-emerald-600 text-white text-center px-4 text-sm transition-all duration-500 overflow-hidden ${
-          showAnnouncement ? 'opacity-100 max-h-10 py-2' : 'opacity-0 max-h-0 py-0'
-        }`}
+        className={`bg-gradient-to-r from-green-600 to-emerald-600 text-white text-center px-4 transition-all duration-500 overflow-hidden ${
+          showAnnouncement ? 'opacity-100 py-2 max-h-20' : 'opacity-0 py-0 max-h-0'
+        } text-xs sm:text-sm`}
         style={{ willChange: 'opacity, max-height, padding' }}
       >
+
         <div className="flex items-center justify-center space-x-2">
           <FaSeedling className="text-green-200" />
           <span className="font-medium">{t('announcement')}</span>
@@ -360,7 +361,8 @@ export default function Navbar() {
             {/* Language Switcher */}
             <select
               aria-label="Language"
-              className="hidden sm:block border-2 border-green-200 text-green-700 rounded-xl px-3 py-2 text-sm bg-white/80 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+              className="border-2 border-green-200 text-green-700 rounded-xl px-3 py-2 text-sm bg-white/80 backdrop-blur-sm ml-1"
+
               value={localeUI}
               onChange={(e) => {
                 const l = e.target.value;
